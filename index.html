@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/global.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.4/dialog-polyfill.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.4/dialog-polyfill.css"/>
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=Event.focusin"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/elm.min.js"></script>
+  </head>
+  <body>
+    <div id="info-enable-js" class="alert">
+      <p class="alert-danger">
+        Please enable JavaScript to use the application.
+      </p>
+    </div>
+    <script src="/app.js"></script>
+    <script>
+      document.getElementById('info-enable-js').style.display = 'none';
+      var app = Elm.Main.fullscreen();
+      app.ports.title.subscribe(function (title) {
+        document.title = title;
+      });
+    </script>
+  </body>
+</html>

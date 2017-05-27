@@ -1,0 +1,9 @@
+{
+  "title": "News",
+  "driver": "news-section",
+  "news": {
+    "news": [
+      "2017-05-27_18-48"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Blog | Evgeniy Simonenko",
+  "mode": "development",
+  "sections": [
+    {
+      "id": "home",
+      "title": "Home",
+      "route": "/home",
+      "icon": "home",
+      "placement": [
+        "header", "drawer", "footer", "sitemap"
+      ]
+    },
+    {
+      "id": "blog",
+      "title": "Blog",
+      "route": "/blog",
+      "placement": [
+        "header", "drawer", "footer", "sitemap"
+      ]
+    },
+    {
+      "id": "news",
+      "title": "News",
+      "route": "/news",
+      "placement": [
+        "header", "drawer", "footer", "sitemap"
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "route": "/about",
+      "placement": [
+        "header", "drawer", "footer", "sitemap"
+      ]
+    }
+  ],
+  "copyright": {
+    "text": "&copy; Evgeniy Simonenko, 2013 &ndash; 2017",
+    "url": "/#!/copyright",
+    "email": "easimonenko@mail.ru"
+  },
+  "links": [
+    {
+      "title": "Made with Bloggero",
+      "url": "https://github.com/easimonenko/bloggero-elm-mdl",
+      "icon": "github"
+    }
+  ],
+  "modules": [
+    "blog", "news"
+  ],
+  "blog": {
+    "root": "/blog"
+  },
+  "news": {
+    "root": "/news"
+  }
+}

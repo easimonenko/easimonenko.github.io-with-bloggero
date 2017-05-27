@@ -1,0 +1,17 @@
+.page {
+  padding: 1em;
+}
+
+.page h1 {
+  font-size: 22pt;
+  font-variant: small-caps;
+}
+
+.page h2 {
+  font-size: 18pt;
+}
+
+.page p, ul, a {
+  font-size: 12pt;
+  font-weight: lighter;
+}
