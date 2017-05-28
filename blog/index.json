@@ -3,6 +3,7 @@
   "driver": "blog",
   "blog": {
     "posts": [
+      "node-cli-options-parsing-review"
     ]
   }
 }
