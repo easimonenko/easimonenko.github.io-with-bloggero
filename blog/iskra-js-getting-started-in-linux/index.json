@@ -1,0 +1,13 @@
+{
+  "title": "Начало работы с Iskra JS в Linux",
+  "driver": "post",
+  "post": {
+    "author": "Симоненко Евгений А.",
+    "date": "2016-12-07",
+    "abstract": "В этой статье рассматривается как начать работать с [Iskra JS][http://amperka.ru/product/iskra-js] в среде Linux.",
+    "tags": [
+      "Linux", "Iskra JS", "Espruino", "IoT", "Amperka", "JavaScript", "Arduino",
+      "Development"
+    ]
+  }
+}
