@@ -1,0 +1,12 @@
+{
+  "title": "Маленький пример различия результатов одного и того же кода TypeScript и JavaScript",
+  "driver": "post",
+  "post": {
+    "author": "Симоненко Евгений А.",
+    "date": "2016-02-11",
+    "highlight": true,
+    "tags": [
+      "TypeScript", "JavaScript"
+    ]
+  }
+}

@@ -3,7 +3,8 @@
   "driver": "blog",
   "blog": {
     "posts": [
-      "node-cli-options-parsing-review"
+      "node-cli-options-parsing-review",
+      "small-example-differences-typescript-and-javascript"
     ]
   }
 }
