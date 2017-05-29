@@ -4,6 +4,7 @@
   "blog": {
     "posts": [
       "node-cli-options-parsing-review",
+      "developers-tools-in-the-elm-language",
       "small-example-differences-typescript-and-javascript"
     ]
   }

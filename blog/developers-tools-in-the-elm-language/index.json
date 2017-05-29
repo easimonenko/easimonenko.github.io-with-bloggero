@@ -1,0 +1,12 @@
+{
+  "title": "Инструменты разработчика на языке Elm",
+  "driver": "post",
+  "post": {
+    "author": "Симоненко Евгений А.",
+    "date": "2016-06-08",
+    "updating_date": "2016-06-14",
+    "tags": [
+      "Elm", "FunctionalProgramming", "Web", "Development"
+    ]
+  }
+}
