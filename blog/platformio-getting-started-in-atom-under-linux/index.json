@@ -1,0 +1,13 @@
+{
+  "title": "Начало работы с PlatformIO в Atom под Linux",
+  "driver": "post",
+  "post": {
+    "author": "Симоненко Евгений А.",
+    "abstract": "В этой статье рассматривается как начать использовать PlatformIO с Atom для разработки скетчей для Arduino в среде Linux.",
+    "date": "2016-06-12",
+    "updating_date": "2016-06-14",
+    "tags": [
+      "Linux", "Atom", "PlatformIO", "Arduino", "Development"
+    ]
+  }
+}
