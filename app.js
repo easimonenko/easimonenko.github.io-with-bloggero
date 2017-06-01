@@ -33957,8 +33957,16 @@ var _easimonenko$bloggero_elm_mdl$Main$alertListView = function (model) {
 		_debois$elm_mdl$Material_Grid$cell,
 		{
 			ctor: '::',
-			_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$All, 2),
-			_1: {ctor: '[]'}
+			_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Desktop, 2),
+			_1: {
+				ctor: '::',
+				_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Tablet, 8),
+				_1: {
+					ctor: '::',
+					_0: A2(_debois$elm_mdl$Material_Grid$size, _debois$elm_mdl$Material_Grid$Phone, 4),
+					_1: {ctor: '[]'}
+				}
+			}
 		},
 		A2(
 			_elm_lang$core$Maybe$withDefault,

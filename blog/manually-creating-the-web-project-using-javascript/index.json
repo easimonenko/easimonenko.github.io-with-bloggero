@@ -1,0 +1,12 @@
+{
+  "title": "Ручное создание веб-проекта на JavaScript",
+  "driver": "post",
+  "post": {
+    "author": "Симоненко Евгений",
+    "date": "2016-01-26",
+    "updating_date": "2016-02-15",
+    "tags": [
+      "JavaScript", "Web", "Development", "TypeScript", "Node.js", "Bower", "NPM"
+    ]
+  }
+}
