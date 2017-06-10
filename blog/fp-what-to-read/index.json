@@ -1,0 +1,12 @@
+{
+  "title": "Функциональное программирование: что почитать",
+  "driver": "post",
+  "post": {
+    "author": "Симоненко Евгений",
+    "date": "2013-08-30",
+    "updating_date": "2016-06-07",
+    "tags": [
+      "Haskell, Scala, Elm, FunctionalProgramming, ComputerScience, WhatToRead, Study"
+    ]
+  }
+}
