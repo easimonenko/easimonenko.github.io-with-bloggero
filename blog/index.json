@@ -12,7 +12,8 @@
       "small-example-differences-typescript-and-javascript",
       "manually-creating-the-web-project-using-javascript",
       "lp-what-to-read",
-      "fp-what-to-read"
+      "fp-what-to-read",
+      "hakyll-syntax-highlighting"
     ]
   }
 }
