@@ -17,6 +17,11 @@
   line-height: 20pt;
 }
 
+.page h4 {
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
 .page p, ul, a {
   font-size: 12pt;
   font-weight: lighter;
