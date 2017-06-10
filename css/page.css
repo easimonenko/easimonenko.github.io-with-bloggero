@@ -9,6 +9,12 @@
 
 .page h2 {
   font-size: 18pt;
+  line-height: 22pt;
+}
+
+.page h3 {
+  font-size: 16pt;
+  line-height: 20pt;
 }
 
 .page p, ul, a {
