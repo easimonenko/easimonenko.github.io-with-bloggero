@@ -16,7 +16,8 @@
       "hakyll-syntax-highlighting",
       "hakyll-and-git",
       "static-sites-and-git",
-      "hakyll-getting-started"
+      "hakyll-getting-started",
+      "static-sites-generators"
     ]
   }
 }
