@@ -13,7 +13,9 @@
       "manually-creating-the-web-project-using-javascript",
       "lp-what-to-read",
       "fp-what-to-read",
-      "hakyll-syntax-highlighting"
+      "hakyll-syntax-highlighting",
+      "hakyll-and-git",
+      "static-sites-and-git"
     ]
   }
 }
