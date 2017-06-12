@@ -17862,23 +17862,25 @@ _elm_community$maybe_extra$Maybe_Extra_ops['?'] = F2(
 		return A2(_elm_lang$core$Maybe$withDefault, x, mx);
 	});
 
-var _easimonenko$bloggero_elm_mdl$Blog_PostInfo$PostInfo = F3(
-	function (a, b, c) {
-		return {author: a, $abstract: b, date: c};
+var _easimonenko$bloggero_elm_mdl$Blog_PostInfo$PostInfo = F4(
+	function (a, b, c, d) {
+		return {author: a, $abstract: b, date: c, updatingDate: d};
 	});
 var _easimonenko$bloggero_elm_mdl$Blog_PostInfo$postInfoDecoder = _elm_lang$core$Json_Decode$maybe(
 	A2(
 		_elm_lang$core$Json_Decode$field,
 		'post',
-		A4(
-			_elm_lang$core$Json_Decode$map3,
+		A5(
+			_elm_lang$core$Json_Decode$map4,
 			_easimonenko$bloggero_elm_mdl$Blog_PostInfo$PostInfo,
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'author', _elm_lang$core$Json_Decode$string)),
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'abstract', _elm_lang$core$Json_Decode$string)),
 			_elm_lang$core$Json_Decode$maybe(
-				A2(_elm_lang$core$Json_Decode$field, 'date', _elm_lang$core$Json_Decode$string)))));
+				A2(_elm_lang$core$Json_Decode$field, 'date', _elm_lang$core$Json_Decode$string)),
+			_elm_lang$core$Json_Decode$maybe(
+				A2(_elm_lang$core$Json_Decode$field, 'updating_date', _elm_lang$core$Json_Decode$string)))));
 
 var _elm_lang$http$Native_Http = function() {
 
@@ -18829,67 +18831,99 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$view = function (model) {
 													A2(_elm_lang$core$Basics_ops['++'], '/', postId));
 												return {
 													ctor: '::',
-													_0: A2(_easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$linkFromPageInfo, path, _p0._0._0.pageInfo),
-													_1: A2(
-														_elm_lang$core$Maybe$withDefault,
+													_0: A2(
+														_elm_lang$html$Html$p,
 														{ctor: '[]'},
-														A2(
-															_elm_lang$core$Maybe$map,
-															function (_p1) {
-																var _p2 = _p1;
-																return {
-																	ctor: '::',
-																	_0: A3(
-																		_elm_community$maybe_extra$Maybe_Extra$unwrap,
-																		_elm_lang$html$Html$text(''),
-																		function (date) {
-																			return A2(
-																				_elm_lang$html$Html$span,
-																				{
-																					ctor: '::',
-																					_0: _elm_lang$html$Html_Attributes$class('news-link-date'),
-																					_1: {
-																						ctor: '::',
-																						_0: _elm_community$html_extra$Html_Attributes_Extra$innerHtml('&ndash;&nbsp;'),
-																						_1: {ctor: '[]'}
-																					}
-																				},
-																				{
-																					ctor: '::',
-																					_0: _elm_lang$html$Html$text(date),
-																					_1: {ctor: '[]'}
-																				});
-																		},
-																		_p2.date),
-																	_1: {
-																		ctor: '::',
-																		_0: A3(
-																			_elm_community$maybe_extra$Maybe_Extra$unwrap,
-																			_elm_lang$html$Html$text(''),
-																			function (author) {
-																				return A2(
-																					_elm_lang$html$Html$span,
-																					{
-																						ctor: '::',
-																						_0: _elm_lang$html$Html_Attributes$class('news-link-author'),
-																						_1: {
+														{
+															ctor: '::',
+															_0: A2(_easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$linkFromPageInfo, path, _p0._0._0.pageInfo),
+															_1: A2(
+																_elm_lang$core$Maybe$withDefault,
+																{ctor: '[]'},
+																A2(
+																	_elm_lang$core$Maybe$map,
+																	function (_p1) {
+																		var _p2 = _p1;
+																		return {
+																			ctor: '::',
+																			_0: A3(
+																				_elm_community$maybe_extra$Maybe_Extra$unwrap,
+																				_elm_lang$html$Html$text(''),
+																				function (date) {
+																					return A2(
+																						_elm_lang$html$Html$span,
+																						{
 																							ctor: '::',
-																							_0: _elm_community$html_extra$Html_Attributes_Extra$innerHtml('&ndash;&nbsp;'),
+																							_0: _elm_lang$html$Html_Attributes$class('post-link-date'),
+																							_1: {
+																								ctor: '::',
+																								_0: _elm_community$html_extra$Html_Attributes_Extra$innerHtml('&ndash;&nbsp;'),
+																								_1: {ctor: '[]'}
+																							}
+																						},
+																						{
+																							ctor: '::',
+																							_0: _elm_lang$html$Html$text(date),
 																							_1: {ctor: '[]'}
-																						}
+																						});
+																				},
+																				_p2.date),
+																			_1: {
+																				ctor: '::',
+																				_0: A3(
+																					_elm_community$maybe_extra$Maybe_Extra$unwrap,
+																					_elm_lang$html$Html$text(''),
+																					function (updatingDate) {
+																						return A2(
+																							_elm_lang$html$Html$span,
+																							{
+																								ctor: '::',
+																								_0: _elm_lang$html$Html_Attributes$class('post-link-date'),
+																								_1: {
+																									ctor: '::',
+																									_0: _elm_community$html_extra$Html_Attributes_Extra$innerHtml('/&nbsp;'),
+																									_1: {ctor: '[]'}
+																								}
+																							},
+																							{
+																								ctor: '::',
+																								_0: _elm_lang$html$Html$text(updatingDate),
+																								_1: {ctor: '[]'}
+																							});
 																					},
-																					{
-																						ctor: '::',
-																						_0: _elm_lang$html$Html$text(author),
-																						_1: {ctor: '[]'}
-																					});
-																			},
-																			_p2.author),
-																		_1: {ctor: '[]'}
-																	}
-																};
-															},
-															_p0._0._0.postInfo))
+																					_p2.updatingDate),
+																				_1: {
+																					ctor: '::',
+																					_0: A3(
+																						_elm_community$maybe_extra$Maybe_Extra$unwrap,
+																						_elm_lang$html$Html$text(''),
+																						function (author) {
+																							return A2(
+																								_elm_lang$html$Html$span,
+																								{
+																									ctor: '::',
+																									_0: _elm_lang$html$Html_Attributes$class('post-link-author'),
+																									_1: {
+																										ctor: '::',
+																										_0: _elm_community$html_extra$Html_Attributes_Extra$innerHtml('&ndash;&nbsp;'),
+																										_1: {ctor: '[]'}
+																									}
+																								},
+																								{
+																									ctor: '::',
+																									_0: _elm_lang$html$Html$text(author),
+																									_1: {ctor: '[]'}
+																								});
+																						},
+																						_p2.author),
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		};
+																	},
+																	_p0._0._0.postInfo))
+														}),
+													_1: {ctor: '[]'}
 												};
 											}
 										} else {
@@ -29442,71 +29476,109 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$view = function (model) {
 									_0: A2(
 										_elm_lang$html$Html$p,
 										{ctor: '[]'},
-										A2(
-											_elm_lang$core$Basics_ops['++'],
-											A2(
+										{
+											ctor: '::',
+											_0: A2(
 												_elm_lang$core$Maybe$withDefault,
-												{ctor: '[]'},
+												_elm_lang$html$Html$text(''),
 												A2(
 													_elm_lang$core$Maybe$map,
 													function (author) {
-														return {
-															ctor: '::',
-															_0: A2(
-																_elm_lang$html$Html$span,
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html_Attributes$class('post-author'),
-																	_1: {ctor: '[]'}
-																},
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('Author: '),
-																	_1: {ctor: '[]'}
-																}),
-															_1: {
-																ctor: '::',
-																_0: _elm_lang$html$Html$text(author),
-																_1: {ctor: '[]'}
-															}
-														};
-													},
-													postInfo.author)),
-											A2(
-												_elm_lang$core$Basics_ops['++'],
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html$text(' '),
-													_1: {ctor: '[]'}
-												},
-												A2(
-													_elm_lang$core$Maybe$withDefault,
-													{ctor: '[]'},
-													A2(
-														_elm_lang$core$Maybe$map,
-														function (date) {
-															return {
+														return A2(
+															_elm_lang$html$Html$span,
+															{ctor: '[]'},
+															{
 																ctor: '::',
 																_0: A2(
 																	_elm_lang$html$Html$span,
 																	{
 																		ctor: '::',
-																		_0: _elm_lang$html$Html_Attributes$class('post-date'),
+																		_0: _elm_lang$html$Html_Attributes$class('post-author'),
 																		_1: {ctor: '[]'}
 																	},
 																	{
 																		ctor: '::',
-																		_0: _elm_lang$html$Html$text('Date: '),
+																		_0: _elm_lang$html$Html$text('Author: '),
 																		_1: {ctor: '[]'}
 																	}),
 																_1: {
 																	ctor: '::',
-																	_0: _elm_lang$html$Html$text(date),
+																	_0: _elm_lang$html$Html$text(author),
 																	_1: {ctor: '[]'}
 																}
-															};
+															});
+													},
+													postInfo.author)),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_elm_lang$core$Maybe$withDefault,
+													_elm_lang$html$Html$text(''),
+													A2(
+														_elm_lang$core$Maybe$map,
+														function (date) {
+															return A2(
+																_elm_lang$html$Html$span,
+																{ctor: '[]'},
+																{
+																	ctor: '::',
+																	_0: A2(
+																		_elm_lang$html$Html$span,
+																		{
+																			ctor: '::',
+																			_0: _elm_lang$html$Html_Attributes$class('post-date'),
+																			_1: {ctor: '[]'}
+																		},
+																		{
+																			ctor: '::',
+																			_0: _elm_lang$html$Html$text(' Date: '),
+																			_1: {ctor: '[]'}
+																		}),
+																	_1: {
+																		ctor: '::',
+																		_0: _elm_lang$html$Html$text(date),
+																		_1: {ctor: '[]'}
+																	}
+																});
 														},
-														postInfo.date))))),
+														postInfo.date)),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_elm_lang$core$Maybe$withDefault,
+														_elm_lang$html$Html$text(''),
+														A2(
+															_elm_lang$core$Maybe$map,
+															function (updatingDate) {
+																return A2(
+																	_elm_lang$html$Html$span,
+																	{ctor: '[]'},
+																	{
+																		ctor: '::',
+																		_0: A2(
+																			_elm_lang$html$Html$span,
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html_Attributes$class('post-date'),
+																				_1: {ctor: '[]'}
+																			},
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html$text(' Updating: '),
+																				_1: {ctor: '[]'}
+																			}),
+																		_1: {
+																			ctor: '::',
+																			_0: _elm_lang$html$Html$text(updatingDate),
+																			_1: {ctor: '[]'}
+																		}
+																	});
+															},
+															postInfo.updatingDate)),
+													_1: {ctor: '[]'}
+												}
+											}
+										}),
 									_1: {
 										ctor: '::',
 										_0: A2(
@@ -29643,20 +29715,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 				switch (_p5.ctor) {
 					case 'Success':
 						var _p7 = _p5._2;
-						var postDecoder = _elm_lang$core$Json_Decode$maybe(
-							A2(
-								_elm_lang$core$Json_Decode$field,
-								'post',
-								A4(
-									_elm_lang$core$Json_Decode$map3,
-									_easimonenko$bloggero_elm_mdl$Blog_PostInfo$PostInfo,
-									_elm_lang$core$Json_Decode$maybe(
-										A2(_elm_lang$core$Json_Decode$field, 'author', _elm_lang$core$Json_Decode$string)),
-									_elm_lang$core$Json_Decode$maybe(
-										A2(_elm_lang$core$Json_Decode$field, 'abstract', _elm_lang$core$Json_Decode$string)),
-									_elm_lang$core$Json_Decode$maybe(
-										A2(_elm_lang$core$Json_Decode$field, 'date', _elm_lang$core$Json_Decode$string)))));
-						var _p6 = A2(_elm_lang$core$Json_Decode$decodeString, postDecoder, _p5._1);
+						var _p6 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero_elm_mdl$Blog_PostInfo$postInfoDecoder, _p5._1);
 						if (_p6.ctor === 'Ok') {
 							return {
 								ctor: '_Tuple2',
