@@ -3,6 +3,7 @@
   "driver": "blog",
   "blog": {
     "posts": [
+      "oai-pmh-cli",
       "arxiv.org",
       "node-cli-options-parsing-review",
       "iskra-js-getting-started-in-linux",
