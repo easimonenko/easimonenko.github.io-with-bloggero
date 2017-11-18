@@ -3,6 +3,7 @@
   "driver": "blog",
   "blog": {
     "posts": [
+      "arxiv.org",
       "node-cli-options-parsing-review",
       "iskra-js-getting-started-in-linux",
       "platformio-getting-started-in-atom-under-linux",
