@@ -17343,7 +17343,7 @@ var _debois$elm_mdl$Material_List$ul = function (options) {
 		});
 };
 
-var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$toCSSClassName = function (level) {
+var _easimonenko$bloggero$Alert_AlertLevel$toCSSClassName = function (level) {
 	return A2(
 		_elm_lang$core$Basics_ops['++'],
 		'alert-',
@@ -17363,17 +17363,17 @@ var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$toCSSClassName = function (le
 			}
 		}());
 };
-var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$NoneLevel = {ctor: 'NoneLevel'};
-var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel = {ctor: 'DangerLevel'};
-var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel = {ctor: 'WarningLevel'};
-var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel = {ctor: 'InfoLevel'};
-var _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$SuccessLevel = {ctor: 'SuccessLevel'};
+var _easimonenko$bloggero$Alert_AlertLevel$NoneLevel = {ctor: 'NoneLevel'};
+var _easimonenko$bloggero$Alert_AlertLevel$DangerLevel = {ctor: 'DangerLevel'};
+var _easimonenko$bloggero$Alert_AlertLevel$WarningLevel = {ctor: 'WarningLevel'};
+var _easimonenko$bloggero$Alert_AlertLevel$InfoLevel = {ctor: 'InfoLevel'};
+var _easimonenko$bloggero$Alert_AlertLevel$SuccessLevel = {ctor: 'SuccessLevel'};
 
-var _easimonenko$bloggero_elm_mdl$Alert_Alert$update = F2(
+var _easimonenko$bloggero$Alert_Alert$update = F2(
 	function (msg, model) {
 		return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 	});
-var _easimonenko$bloggero_elm_mdl$Alert_Alert$init = F3(
+var _easimonenko$bloggero$Alert_Alert$init = F3(
 	function (level, id, message) {
 		return {
 			ctor: '_Tuple2',
@@ -17381,23 +17381,23 @@ var _easimonenko$bloggero_elm_mdl$Alert_Alert$init = F3(
 			_1: _elm_lang$core$Platform_Cmd$none
 		};
 	});
-var _easimonenko$bloggero_elm_mdl$Alert_Alert$Model = F4(
+var _easimonenko$bloggero$Alert_Alert$Model = F4(
 	function (a, b, c, d) {
 		return {mdl: a, id: b, level: c, message: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Alert_Alert$AlertClose = function (a) {
+var _easimonenko$bloggero$Alert_Alert$AlertClose = function (a) {
 	return {ctor: 'AlertClose', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Alert_Alert$Mdl = function (a) {
+var _easimonenko$bloggero$Alert_Alert$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Alert_Alert$view = function (model) {
+var _easimonenko$bloggero$Alert_Alert$view = function (model) {
 	return A2(
 		_debois$elm_mdl$Material_List$li,
 		{
 			ctor: '::',
 			_0: _debois$elm_mdl$Material_Options$cs(
-				_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$toCSSClassName(model.level)),
+				_easimonenko$bloggero$Alert_AlertLevel$toCSSClassName(model.level)),
 			_1: {ctor: '[]'}
 		},
 		{
@@ -17419,7 +17419,7 @@ var _easimonenko$bloggero_elm_mdl$Alert_Alert$view = function (model) {
 						ctor: '::',
 						_0: A5(
 							_debois$elm_mdl$Material_Button$render,
-							_easimonenko$bloggero_elm_mdl$Alert_Alert$Mdl,
+							_easimonenko$bloggero$Alert_Alert$Mdl,
 							{
 								ctor: '::',
 								_0: 0,
@@ -17432,7 +17432,7 @@ var _easimonenko$bloggero_elm_mdl$Alert_Alert$view = function (model) {
 								_1: {
 									ctor: '::',
 									_0: _debois$elm_mdl$Material_Options$onClick(
-										_easimonenko$bloggero_elm_mdl$Alert_Alert$AlertClose(model.id)),
+										_easimonenko$bloggero$Alert_Alert$AlertClose(model.id)),
 									_1: {ctor: '[]'}
 								}
 							},
@@ -17448,7 +17448,7 @@ var _easimonenko$bloggero_elm_mdl$Alert_Alert$view = function (model) {
 		});
 };
 
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$init = {
+var _easimonenko$bloggero$Alert_AlertList$init = {
 	ctor: '_Tuple2',
 	_0: {
 		mdl: _debois$elm_mdl$Material$model,
@@ -17457,17 +17457,17 @@ var _easimonenko$bloggero_elm_mdl$Alert_AlertList$init = {
 	},
 	_1: _elm_lang$core$Platform_Cmd$none
 };
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$Model = F3(
+var _easimonenko$bloggero$Alert_AlertList$Model = F3(
 	function (a, b, c) {
 		return {mdl: a, alerts: b, currentId: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$AlertMsg = function (a) {
+var _easimonenko$bloggero$Alert_AlertList$AlertMsg = function (a) {
 	return {ctor: 'AlertMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$add = F3(
+var _easimonenko$bloggero$Alert_AlertList$add = F3(
 	function (model, level, message) {
 		var currentId = model.currentId + 1;
-		var _p0 = A3(_easimonenko$bloggero_elm_mdl$Alert_Alert$init, level, model.currentId, message);
+		var _p0 = A3(_easimonenko$bloggero$Alert_Alert$init, level, model.currentId, message);
 		var alert = _p0._0;
 		var alertCmds = _p0._1;
 		var alerts = {ctor: '::', _0: alert, _1: model.alerts};
@@ -17476,10 +17476,10 @@ var _easimonenko$bloggero_elm_mdl$Alert_AlertList$add = F3(
 			_0: _elm_lang$core$Native_Utils.update(
 				model,
 				{alerts: alerts, currentId: currentId}),
-			_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Alert_AlertList$AlertMsg, alertCmds)
+			_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Alert_AlertList$AlertMsg, alertCmds)
 		};
 	});
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$view = function (model) {
+var _easimonenko$bloggero$Alert_AlertList$view = function (model) {
 	return A2(
 		_debois$elm_mdl$Material_List$ul,
 		{ctor: '[]'},
@@ -17488,19 +17488,19 @@ var _easimonenko$bloggero_elm_mdl$Alert_AlertList$view = function (model) {
 			function (_p1) {
 				return A2(
 					_elm_lang$html$Html$map,
-					_easimonenko$bloggero_elm_mdl$Alert_AlertList$AlertMsg,
-					_easimonenko$bloggero_elm_mdl$Alert_Alert$view(_p1));
+					_easimonenko$bloggero$Alert_AlertList$AlertMsg,
+					_easimonenko$bloggero$Alert_Alert$view(_p1));
 			},
 			model.alerts));
 };
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$Mdl = function (a) {
+var _easimonenko$bloggero$Alert_AlertList$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Alert_AlertList$update = F2(
+var _easimonenko$bloggero$Alert_AlertList$update = F2(
 	function (msg, model) {
 		var _p2 = msg;
 		if (_p2.ctor === 'Mdl') {
-			return A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero_elm_mdl$Alert_AlertList$Mdl, _p2._0, model);
+			return A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero$Alert_AlertList$Mdl, _p2._0, model);
 		} else {
 			var _p3 = _p2._0;
 			if (_p3.ctor === 'AlertClose') {
@@ -17524,7 +17524,7 @@ var _easimonenko$bloggero_elm_mdl$Alert_AlertList$update = F2(
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view = function (model) {
+var _easimonenko$bloggero$Alert_InPlaceAlert$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{
@@ -17539,7 +17539,7 @@ var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view = function (model) {
 				{
 					ctor: '::',
 					_0: _elm_lang$html$Html_Attributes$class(
-						_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$toCSSClassName(model.level)),
+						_easimonenko$bloggero$Alert_AlertLevel$toCSSClassName(model.level)),
 					_1: {ctor: '[]'}
 				},
 				{
@@ -17550,94 +17550,14 @@ var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view = function (model) {
 			_1: {ctor: '[]'}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init = F2(
+var _easimonenko$bloggero$Alert_InPlaceAlert$init = F2(
 	function (level, message) {
 		return {level: level, message: message};
 	});
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$Model = F2(
+var _easimonenko$bloggero$Alert_InPlaceAlert$Model = F2(
 	function (a, b) {
 		return {level: a, message: b};
 	});
-
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$init = F2(
-	function (level, message) {
-		return {mdl: _debois$elm_mdl$Material$model, level: level, message: message, closed: false};
-	});
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$Model = F4(
-	function (a, b, c, d) {
-		return {mdl: a, level: b, message: c, closed: d};
-	});
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$AlertClose = {ctor: 'AlertClose'};
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$Mdl = function (a) {
-	return {ctor: 'Mdl', _0: a};
-};
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$update = F2(
-	function (msg, model) {
-		var _p0 = msg;
-		if (_p0.ctor === 'Mdl') {
-			return A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$Mdl, _p0._0, model);
-		} else {
-			return {
-				ctor: '_Tuple2',
-				_0: _elm_lang$core$Native_Utils.update(
-					model,
-					{closed: true}),
-				_1: _elm_lang$core$Platform_Cmd$none
-			};
-		}
-	});
-var _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$view = function (model) {
-	return (!model.closed) ? A2(
-		_elm_lang$html$Html$div,
-		{
-			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('alert'),
-			_1: {ctor: '[]'}
-		},
-		{
-			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$p,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class(
-						_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$toCSSClassName(model.level)),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text(model.message),
-					_1: {
-						ctor: '::',
-						_0: A5(
-							_debois$elm_mdl$Material_Button$render,
-							_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$Mdl,
-							{
-								ctor: '::',
-								_0: 0,
-								_1: {ctor: '[]'}
-							},
-							model.mdl,
-							{
-								ctor: '::',
-								_0: _debois$elm_mdl$Material_Button$icon,
-								_1: {
-									ctor: '::',
-									_0: _debois$elm_mdl$Material_Options$onClick(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$AlertClose),
-									_1: {ctor: '[]'}
-								}
-							},
-							{
-								ctor: '::',
-								_0: _debois$elm_mdl$Material_Icon$i('close'),
-								_1: {ctor: '[]'}
-							}),
-						_1: {ctor: '[]'}
-					}
-				}),
-			_1: {ctor: '[]'}
-		}) : _elm_lang$html$Html$text('');
-};
 
 var _elm_community$html_extra$Html_Attributes_Extra$role = function (r) {
 	return A2(_elm_lang$html$Html_Attributes$attribute, 'role', r);
@@ -17862,17 +17782,17 @@ _elm_community$maybe_extra$Maybe_Extra_ops['?'] = F2(
 		return A2(_elm_lang$core$Maybe$withDefault, x, mx);
 	});
 
-var _easimonenko$bloggero_elm_mdl$Blog_PostInfo$PostInfo = F4(
+var _easimonenko$bloggero$Blog_PostInfo$PostInfo = F4(
 	function (a, b, c, d) {
 		return {author: a, $abstract: b, date: c, updatingDate: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostInfo$postInfoDecoder = _elm_lang$core$Json_Decode$maybe(
+var _easimonenko$bloggero$Blog_PostInfo$postInfoDecoder = _elm_lang$core$Json_Decode$maybe(
 	A2(
 		_elm_lang$core$Json_Decode$field,
 		'post',
 		A5(
 			_elm_lang$core$Json_Decode$map4,
-			_easimonenko$bloggero_elm_mdl$Blog_PostInfo$PostInfo,
+			_easimonenko$bloggero$Blog_PostInfo$PostInfo,
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'author', _elm_lang$core$Json_Decode$string)),
 			_elm_lang$core$Json_Decode$maybe(
@@ -18243,46 +18163,46 @@ var _elm_lang$http$Http$StringPart = F2(
 	});
 var _elm_lang$http$Http$stringPart = _elm_lang$http$Http$StringPart;
 
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$PageInfo = F2(
+var _easimonenko$bloggero$Page_PageInfo$PageInfo = F2(
 	function (a, b) {
 		return {title: a, driver: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$PageInfoFetchFail = F2(
+var _easimonenko$bloggero$Page_PageInfo$PageInfoFetchFail = F2(
 	function (a, b) {
 		return {ctor: 'PageInfoFetchFail', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$PageInfoFetchSucceed = F2(
+var _easimonenko$bloggero$Page_PageInfo$PageInfoFetchSucceed = F2(
 	function (a, b) {
 		return {ctor: 'PageInfoFetchSucceed', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$init = function (path) {
+var _easimonenko$bloggero$Page_PageInfo$init = function (path) {
 	return A2(
 		_elm_lang$core$Task$attempt,
 		function (result) {
 			var _p0 = result;
 			if (_p0.ctor === 'Ok') {
-				return A2(_easimonenko$bloggero_elm_mdl$Page_PageInfo$PageInfoFetchSucceed, path, _p0._0);
+				return A2(_easimonenko$bloggero$Page_PageInfo$PageInfoFetchSucceed, path, _p0._0);
 			} else {
-				return A2(_easimonenko$bloggero_elm_mdl$Page_PageInfo$PageInfoFetchFail, path, _p0._0);
+				return A2(_easimonenko$bloggero$Page_PageInfo$PageInfoFetchFail, path, _p0._0);
 			}
 		},
 		_elm_lang$http$Http$toTask(
 			_elm_lang$http$Http$getString(
 				A2(_elm_lang$core$Basics_ops['++'], path, '/index.json'))));
 };
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$BadJson = F3(
+var _easimonenko$bloggero$Page_PageInfo$BadJson = F3(
 	function (a, b, c) {
 		return {ctor: 'BadJson', _0: a, _1: b, _2: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$FetchFail = F2(
+var _easimonenko$bloggero$Page_PageInfo$FetchFail = F2(
 	function (a, b) {
 		return {ctor: 'FetchFail', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$Success = F3(
+var _easimonenko$bloggero$Page_PageInfo$Success = F3(
 	function (a, b, c) {
 		return {ctor: 'Success', _0: a, _1: b, _2: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfo$update = function (msg) {
+var _easimonenko$bloggero$Page_PageInfo$update = function (msg) {
 	var _p1 = msg;
 	if (_p1.ctor === 'PageInfoFetchSucceed') {
 		var _p4 = _p1._0;
@@ -18296,19 +18216,19 @@ var _easimonenko$bloggero_elm_mdl$Page_PageInfo$update = function (msg) {
 				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
 				'title',
 				_elm_lang$core$Json_Decode$string,
-				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_easimonenko$bloggero_elm_mdl$Page_PageInfo$PageInfo)));
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_easimonenko$bloggero$Page_PageInfo$PageInfo)));
 		var _p2 = A2(_elm_lang$core$Json_Decode$decodeString, pageInfoDecoder, _p3);
 		if (_p2.ctor === 'Ok') {
-			return A3(_easimonenko$bloggero_elm_mdl$Page_PageInfo$Success, _p4, _p3, _p2._0);
+			return A3(_easimonenko$bloggero$Page_PageInfo$Success, _p4, _p3, _p2._0);
 		} else {
-			return A3(_easimonenko$bloggero_elm_mdl$Page_PageInfo$BadJson, _p4, _p3, _p2._0);
+			return A3(_easimonenko$bloggero$Page_PageInfo$BadJson, _p4, _p3, _p2._0);
 		}
 	} else {
-		return A2(_easimonenko$bloggero_elm_mdl$Page_PageInfo$FetchFail, _p1._0, _p1._1);
+		return A2(_easimonenko$bloggero$Page_PageInfo$FetchFail, _p1._0, _p1._1);
 	}
 };
 
-var _easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$linkFromPageInfo = F2(
+var _easimonenko$bloggero$Link_LinkFromPageInfo$linkFromPageInfo = F2(
 	function (path, pageInfo) {
 		return A2(
 			_elm_lang$html$Html$a,
@@ -18727,10 +18647,10 @@ var _elm_lang$navigation$Navigation$onEffects = F4(
 	});
 _elm_lang$core$Native_Platform.effectManagers['Navigation'] = {pkg: 'elm-lang/navigation', init: _elm_lang$navigation$Navigation$init, onEffects: _elm_lang$navigation$Navigation$onEffects, onSelfMsg: _elm_lang$navigation$Navigation$onSelfMsg, tag: 'fx', cmdMap: _elm_lang$navigation$Navigation$cmdMap, subMap: _elm_lang$navigation$Navigation$subMap};
 
-var _easimonenko$bloggero_elm_mdl$Utils$stringToMaybe = function (str) {
+var _easimonenko$bloggero$Utils$stringToMaybe = function (str) {
 	return _elm_lang$core$String$isEmpty(str) ? _elm_lang$core$Maybe$Nothing : _elm_lang$core$Maybe$Just(str);
 };
-var _easimonenko$bloggero_elm_mdl$Utils$tuple2triple = F2(
+var _easimonenko$bloggero$Utils$tuple2triple = F2(
 	function (t, v) {
 		return {
 			ctor: '_Tuple3',
@@ -18739,7 +18659,7 @@ var _easimonenko$bloggero_elm_mdl$Utils$tuple2triple = F2(
 			_2: v
 		};
 	});
-var _easimonenko$bloggero_elm_mdl$Utils$toHumanReadable = function (error) {
+var _easimonenko$bloggero$Utils$toHumanReadable = function (error) {
 	return A2(
 		_elm_lang$core$Basics_ops['++'],
 		'HTTP request error ',
@@ -18769,11 +18689,11 @@ var _easimonenko$bloggero_elm_mdl$Utils$toHumanReadable = function (error) {
 			}
 		}());
 };
-var _easimonenko$bloggero_elm_mdl$Utils$pagePath = function (location) {
+var _easimonenko$bloggero$Utils$pagePath = function (location) {
 	return A2(_elm_lang$core$String$dropLeft, 2, location.hash);
 };
 
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$view = function (model) {
+var _easimonenko$bloggero$Blog_PostList$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -18792,7 +18712,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$view = function (model) {
 				_0: A2(
 					_elm_lang$core$Maybe$withDefault,
 					_elm_lang$html$Html$text(''),
-					A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+					A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 				_1: {
 					ctor: '::',
 					_0: A2(
@@ -18836,7 +18756,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$view = function (model) {
 														{ctor: '[]'},
 														{
 															ctor: '::',
-															_0: A2(_easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$linkFromPageInfo, path, _p0._0._0.pageInfo),
+															_0: A2(_easimonenko$bloggero$Link_LinkFromPageInfo$linkFromPageInfo, path, _p0._0._0.pageInfo),
 															_1: A2(
 																_elm_lang$core$Maybe$withDefault,
 																{ctor: '[]'},
@@ -18956,32 +18876,32 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$defaultConfig = {root: '/blog', title: 'Post List'};
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$Model = F4(
+var _easimonenko$bloggero$Blog_PostList$defaultConfig = {root: '/blog', title: 'Post List'};
+var _easimonenko$bloggero$Blog_PostList$Model = F4(
 	function (a, b, c, d) {
 		return {config: a, postIds: b, postPageInfos: c, inPlaceAlert: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$PostPageInfo = F2(
+var _easimonenko$bloggero$Blog_PostList$PostPageInfo = F2(
 	function (a, b) {
 		return {pageInfo: a, postInfo: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$PostListConfig = F2(
+var _easimonenko$bloggero$Blog_PostList$PostListConfig = F2(
 	function (a, b) {
 		return {root: a, title: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$PostPageInfoMsg = F2(
+var _easimonenko$bloggero$Blog_PostList$PostPageInfoMsg = F2(
 	function (a, b) {
 		return {ctor: 'PostPageInfoMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$Blog_PostList$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg = F2(
+var _easimonenko$bloggero$Blog_PostList$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$init = function (config) {
+var _easimonenko$bloggero$Blog_PostList$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$Blog_PostList$init = function (config) {
 	return {
 		ctor: '_Tuple3',
 		_0: {
@@ -18992,16 +18912,16 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$init = function (config) {
 		},
 		_1: A2(
 			_elm_lang$core$Platform_Cmd$map,
-			_easimonenko$bloggero_elm_mdl$Blog_PostList$PageInfoMsg,
-			_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(config.root)),
-		_2: _easimonenko$bloggero_elm_mdl$Blog_PostList$NoneOutMsg
+			_easimonenko$bloggero$Blog_PostList$PageInfoMsg,
+			_easimonenko$bloggero$Page_PageInfo$init(config.root)),
+		_2: _easimonenko$bloggero$Blog_PostList$NoneOutMsg
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
+var _easimonenko$bloggero$Blog_PostList$update = F2(
 	function (msg, model) {
 		var _p3 = msg;
 		if (_p3.ctor === 'PageInfoMsg') {
-			var _p4 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p3._0);
+			var _p4 = _easimonenko$bloggero$Page_PageInfo$update(_p3._0);
 			switch (_p4.ctor) {
 				case 'Success':
 					var configDecoder = A2(
@@ -19020,7 +18940,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 						var _p6 = _p5._0;
 						if (_elm_lang$core$List$isEmpty(_p6)) {
 							var info = 'Post list is empty.';
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel, info);
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$WarningLevel, info);
 							return {
 								ctor: '_Tuple3',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -19029,7 +18949,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 										inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 									}),
 								_1: _elm_lang$core$Platform_Cmd$none,
-								_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, info)
+								_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, info)
 							};
 						} else {
 							var postPageInfoCmds = A2(
@@ -19037,8 +18957,8 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 								function (postId) {
 									return A2(
 										_elm_lang$core$Platform_Cmd$map,
-										_easimonenko$bloggero_elm_mdl$Blog_PostList$PostPageInfoMsg(postId),
-										_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(
+										_easimonenko$bloggero$Blog_PostList$PostPageInfoMsg(postId),
+										_easimonenko$bloggero$Page_PageInfo$init(
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												model.config.root,
@@ -19046,7 +18966,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 								},
 								_p6);
 							var info = 'Post list loaded.';
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$SuccessLevel, info);
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$SuccessLevel, info);
 							return {
 								ctor: '_Tuple3',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -19056,12 +18976,12 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 										postIds: _p6
 									}),
 								_1: _elm_lang$core$Platform_Cmd$batch(postPageInfoCmds),
-								_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, info)
+								_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, info)
 							};
 						}
 					} else {
 						var _p7 = _p5._0;
-						var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p7);
+						var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p7);
 						return {
 							ctor: '_Tuple3',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -19070,15 +18990,15 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p7)
+							_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p7)
 						};
 					}
 				case 'FetchFail':
 					var info = A2(
 						_elm_lang$core$Basics_ops['++'],
 						'Http Error: ',
-						_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p4._1));
-					var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info);
+						_easimonenko$bloggero$Utils$toHumanReadable(_p4._1));
+					var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info);
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -19087,11 +19007,11 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 								inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 				default:
 					var info = A2(_elm_lang$core$Basics_ops['++'], 'Blog PageInfo: ', _p4._2);
-					var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info);
+					var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info);
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -19100,15 +19020,15 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 								inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 			}
 		} else {
 			var _p10 = _p3._0;
-			var _p8 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p3._1);
+			var _p8 = _easimonenko$bloggero$Page_PageInfo$update(_p3._1);
 			switch (_p8.ctor) {
 				case 'Success':
-					var _p9 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero_elm_mdl$Blog_PostInfo$postInfoDecoder, _p8._1);
+					var _p9 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero$Blog_PostInfo$postInfoDecoder, _p8._1);
 					if (_p9.ctor === 'Ok') {
 						var postPageInfo = {pageInfo: _p8._2, postInfo: _p9._0};
 						return {
@@ -19124,7 +19044,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Nothing
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: _easimonenko$bloggero_elm_mdl$Blog_PostList$NoneOutMsg
+							_2: _easimonenko$bloggero$Blog_PostList$NoneOutMsg
 						};
 					} else {
 						var info = A2(_elm_lang$core$Basics_ops['++'], 'Post Page Info: ', _p9._0);
@@ -19141,7 +19061,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 										model.postPageInfos)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+							_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 						};
 					}
 				case 'FetchFail':
@@ -19154,7 +19074,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 							A2(
 								_elm_lang$core$Basics_ops['++'],
 								' | Http Error: ',
-								_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p8._1))));
+								_easimonenko$bloggero$Utils$toHumanReadable(_p8._1))));
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -19168,7 +19088,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 									model.postPageInfos)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 				default:
 					var info = A2(_elm_lang$core$Basics_ops['++'], 'Post Page Info: ', _p8._2);
@@ -19185,25 +19105,25 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostList$update = F2(
 									model.postPageInfos)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$Blog_PostList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 			}
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$defaultConfig = {title: 'Blog', root: '/blog'};
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$Model = F3(
+var _easimonenko$bloggero$Blog_BlogPage$defaultConfig = {title: 'Blog', root: '/blog'};
+var _easimonenko$bloggero$Blog_BlogPage$Model = F3(
 	function (a, b, c) {
 		return {title: a, root: b, postList: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$Config = F2(
+var _easimonenko$bloggero$Blog_BlogPage$Config = F2(
 	function (a, b) {
 		return {title: a, root: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$PostListMsg = function (a) {
+var _easimonenko$bloggero$Blog_BlogPage$PostListMsg = function (a) {
 	return {ctor: 'PostListMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$view = function (model) {
+var _easimonenko$bloggero$Blog_BlogPage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -19221,17 +19141,17 @@ var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$view = function (model) {
 				ctor: '::',
 				_0: A2(
 					_elm_lang$html$Html$map,
-					_easimonenko$bloggero_elm_mdl$Blog_BlogPage$PostListMsg,
-					_easimonenko$bloggero_elm_mdl$Blog_PostList$view(model.postList)),
+					_easimonenko$bloggero$Blog_BlogPage$PostListMsg,
+					_easimonenko$bloggero$Blog_PostList$view(model.postList)),
 				_1: {ctor: '[]'}
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$init = function (config) {
+var _easimonenko$bloggero$Blog_BlogPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$Blog_BlogPage$init = function (config) {
 	var _p0 = function () {
-		var defaultConfig = _easimonenko$bloggero_elm_mdl$Blog_PostList$defaultConfig;
-		return _easimonenko$bloggero_elm_mdl$Blog_PostList$init(defaultConfig);
+		var defaultConfig = _easimonenko$bloggero$Blog_PostList$defaultConfig;
+		return _easimonenko$bloggero$Blog_PostList$init(defaultConfig);
 	}();
 	var postList = _p0._0;
 	var postListCmds = _p0._1;
@@ -19239,27 +19159,27 @@ var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$init = function (config) {
 	return {
 		ctor: '_Tuple3',
 		_0: {title: config.title, root: config.root, postList: postList},
-		_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Blog_BlogPage$PostListMsg, postListCmds),
-		_2: _easimonenko$bloggero_elm_mdl$Blog_BlogPage$NoneOutMsg
+		_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Blog_BlogPage$PostListMsg, postListCmds),
+		_2: _easimonenko$bloggero$Blog_BlogPage$NoneOutMsg
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$AlertOutMsg = F2(
+var _easimonenko$bloggero$Blog_BlogPage$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$update = F2(
+var _easimonenko$bloggero$Blog_BlogPage$update = F2(
 	function (msg, model) {
 		var _p1 = msg;
-		var _p2 = A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$update, _p1._0, model.postList);
+		var _p2 = A2(_easimonenko$bloggero$Blog_PostList$update, _p1._0, model.postList);
 		var postList = _p2._0;
 		var postListCmds = _p2._1;
 		var postListOutMsg = _p2._2;
 		var outMsg = function () {
 			var _p3 = postListOutMsg;
 			if (_p3.ctor === 'NoneOutMsg') {
-				return _easimonenko$bloggero_elm_mdl$Blog_BlogPage$NoneOutMsg;
+				return _easimonenko$bloggero$Blog_BlogPage$NoneOutMsg;
 			} else {
-				return A2(_easimonenko$bloggero_elm_mdl$Blog_BlogPage$AlertOutMsg, _p3._0, _p3._1);
+				return A2(_easimonenko$bloggero$Blog_BlogPage$AlertOutMsg, _p3._0, _p3._1);
 			}
 		}();
 		return {
@@ -19267,7 +19187,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_BlogPage$update = F2(
 			_0: _elm_lang$core$Native_Utils.update(
 				model,
 				{postList: postList}),
-			_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Blog_BlogPage$PostListMsg, postListCmds),
+			_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Blog_BlogPage$PostListMsg, postListCmds),
 			_2: outMsg
 		};
 	});
@@ -29446,7 +29366,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 		return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
 	});
 
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$view = function (model) {
+var _easimonenko$bloggero$Blog_PostPage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -29455,7 +29375,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$view = function (model) {
 			_0: A2(
 				_elm_lang$core$Maybe$withDefault,
 				_elm_lang$html$Html$text(''),
-				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 			_1: {
 				ctor: '::',
 				_0: A2(
@@ -29643,19 +29563,19 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$Model = F6(
+var _easimonenko$bloggero$Blog_PostPage$Model = F6(
 	function (a, b, c, d, e, f) {
 		return {location: a, pageInfo: b, postInfo: c, rawContent: d, rawContentType: e, inPlaceAlert: f};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$PageContentFetchFail = F2(
+var _easimonenko$bloggero$Blog_PostPage$PageContentFetchFail = F2(
 	function (a, b) {
 		return {ctor: 'PageContentFetchFail', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$PageContentFetchSucceed = F2(
+var _easimonenko$bloggero$Blog_PostPage$PageContentFetchSucceed = F2(
 	function (a, b) {
 		return {ctor: 'PageContentFetchSucceed', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$loadContentType = F2(
+var _easimonenko$bloggero$Blog_PostPage$loadContentType = F2(
 	function (model, contentType) {
 		var extension = function () {
 			var _p1 = contentType;
@@ -29675,47 +29595,47 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$loadContentType = F2(
 			function (result) {
 				var _p2 = result;
 				if (_p2.ctor === 'Ok') {
-					return A2(_easimonenko$bloggero_elm_mdl$Blog_PostPage$PageContentFetchSucceed, _p2._0, contentType);
+					return A2(_easimonenko$bloggero$Blog_PostPage$PageContentFetchSucceed, _p2._0, contentType);
 				} else {
-					return A2(_easimonenko$bloggero_elm_mdl$Blog_PostPage$PageContentFetchFail, _p2._0, contentType);
+					return A2(_easimonenko$bloggero$Blog_PostPage$PageContentFetchFail, _p2._0, contentType);
 				}
 			},
 			_elm_lang$http$Http$toTask(
 				_elm_lang$http$Http$getString(
 					A2(
 						_elm_lang$core$Basics_ops['++'],
-						_easimonenko$bloggero_elm_mdl$Utils$pagePath(model.location),
+						_easimonenko$bloggero$Utils$pagePath(model.location),
 						A2(_elm_lang$core$Basics_ops['++'], '/index.', extension)))));
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$Blog_PostPage$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$FailContentType = {ctor: 'FailContentType'};
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$HtmlContentType = {ctor: 'HtmlContentType'};
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$MarkdownContentType = {ctor: 'MarkdownContentType'};
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$nextContentType = function (contentType) {
+var _easimonenko$bloggero$Blog_PostPage$FailContentType = {ctor: 'FailContentType'};
+var _easimonenko$bloggero$Blog_PostPage$HtmlContentType = {ctor: 'HtmlContentType'};
+var _easimonenko$bloggero$Blog_PostPage$MarkdownContentType = {ctor: 'MarkdownContentType'};
+var _easimonenko$bloggero$Blog_PostPage$nextContentType = function (contentType) {
 	var _p3 = contentType;
 	switch (_p3.ctor) {
 		case 'UnknownContentType':
-			return _easimonenko$bloggero_elm_mdl$Blog_PostPage$MarkdownContentType;
+			return _easimonenko$bloggero$Blog_PostPage$MarkdownContentType;
 		case 'MarkdownContentType':
-			return _easimonenko$bloggero_elm_mdl$Blog_PostPage$HtmlContentType;
+			return _easimonenko$bloggero$Blog_PostPage$HtmlContentType;
 		case 'HtmlContentType':
-			return _easimonenko$bloggero_elm_mdl$Blog_PostPage$FailContentType;
+			return _easimonenko$bloggero$Blog_PostPage$FailContentType;
 		default:
-			return _easimonenko$bloggero_elm_mdl$Blog_PostPage$FailContentType;
+			return _easimonenko$bloggero$Blog_PostPage$FailContentType;
 	}
 };
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
+var _easimonenko$bloggero$Blog_PostPage$update = F2(
 	function (msg, model) {
 		var _p4 = msg;
 		switch (_p4.ctor) {
 			case 'PageInfoMsg':
-				var _p5 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p4._0);
+				var _p5 = _easimonenko$bloggero$Page_PageInfo$update(_p4._0);
 				switch (_p5.ctor) {
 					case 'Success':
 						var _p7 = _p5._2;
-						var _p6 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero_elm_mdl$Blog_PostInfo$postInfoDecoder, _p5._1);
+						var _p6 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero$Blog_PostInfo$postInfoDecoder, _p5._1);
 						if (_p6.ctor === 'Ok') {
 							return {
 								ctor: '_Tuple2',
@@ -29726,12 +29646,12 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 										postInfo: _p6._0
 									}),
 								_1: A2(
-									_easimonenko$bloggero_elm_mdl$Blog_PostPage$loadContentType,
+									_easimonenko$bloggero$Blog_PostPage$loadContentType,
 									model,
-									_easimonenko$bloggero_elm_mdl$Blog_PostPage$nextContentType(model.rawContentType))
+									_easimonenko$bloggero$Blog_PostPage$nextContentType(model.rawContentType))
 							};
 						} else {
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p6._0);
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p6._0);
 							return {
 								ctor: '_Tuple2',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -29744,7 +29664,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 							};
 						}
 					case 'BadJson':
-						var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p5._2);
+						var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p5._2);
 						return {
 							ctor: '_Tuple2',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -29756,9 +29676,9 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 						};
 					default:
 						var inPlaceAlert = A2(
-							_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-							_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
-							_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p5._1));
+							_easimonenko$bloggero$Alert_InPlaceAlert$init,
+							_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
+							_easimonenko$bloggero$Utils$toHumanReadable(_p5._1));
 						return {
 							ctor: '_Tuple2',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -29786,11 +29706,11 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 				if (_p8.ctor === 'BadStatus') {
 					var _p10 = _p8._0;
 					if (_elm_lang$core$Native_Utils.eq(_p10.status.code, 404)) {
-						var otherContentType = _easimonenko$bloggero_elm_mdl$Blog_PostPage$nextContentType(_p4._1);
+						var otherContentType = _easimonenko$bloggero$Blog_PostPage$nextContentType(_p4._1);
 						var _p9 = otherContentType;
 						switch (_p9.ctor) {
 							case 'FailContentType':
-								var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'Page content fetch fail: content file not found.');
+								var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'Page content fetch fail: content file not found.');
 								return {
 									ctor: '_Tuple2',
 									_0: _elm_lang$core$Native_Utils.update(
@@ -29801,7 +29721,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 									_1: _elm_lang$core$Platform_Cmd$none
 								};
 							case 'UnknownContentType':
-								var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'Page content fetch fail: internal error.');
+								var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'Page content fetch fail: internal error.');
 								return {
 									ctor: '_Tuple2',
 									_0: _elm_lang$core$Native_Utils.update(
@@ -29815,13 +29735,13 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 								return {
 									ctor: '_Tuple2',
 									_0: model,
-									_1: A2(_easimonenko$bloggero_elm_mdl$Blog_PostPage$loadContentType, model, otherContentType)
+									_1: A2(_easimonenko$bloggero$Blog_PostPage$loadContentType, model, otherContentType)
 								};
 						}
 					} else {
 						var inPlaceAlert = A2(
-							_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-							_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
+							_easimonenko$bloggero$Alert_InPlaceAlert$init,
+							_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
 							A2(
 								_elm_lang$core$Basics_ops['++'],
 								'Page content fetch: [',
@@ -29840,7 +29760,7 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 						};
 					}
 				} else {
-					var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'Page content fetch error.');
+					var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'Page content fetch error.');
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -29853,12 +29773,12 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$update = F2(
 				}
 		}
 	});
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$UnknownContentType = {ctor: 'UnknownContentType'};
-var _easimonenko$bloggero_elm_mdl$Blog_PostPage$init = function (location) {
-	var path = _easimonenko$bloggero_elm_mdl$Utils$pagePath(location);
+var _easimonenko$bloggero$Blog_PostPage$UnknownContentType = {ctor: 'UnknownContentType'};
+var _easimonenko$bloggero$Blog_PostPage$init = function (location) {
+	var path = _easimonenko$bloggero$Utils$pagePath(location);
 	var inPlaceAlert = A2(
-		_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-		_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel,
+		_easimonenko$bloggero$Alert_InPlaceAlert$init,
+		_easimonenko$bloggero$Alert_AlertLevel$InfoLevel,
 		A2(
 			_elm_lang$core$Basics_ops['++'],
 			'Loading post page [',
@@ -29870,85 +29790,85 @@ var _easimonenko$bloggero_elm_mdl$Blog_PostPage$init = function (location) {
 			pageInfo: _elm_lang$core$Maybe$Nothing,
 			postInfo: _elm_lang$core$Maybe$Nothing,
 			rawContent: _elm_lang$core$Maybe$Nothing,
-			rawContentType: _easimonenko$bloggero_elm_mdl$Blog_PostPage$UnknownContentType,
+			rawContentType: _easimonenko$bloggero$Blog_PostPage$UnknownContentType,
 			inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 		},
 		_1: A2(
 			_elm_lang$core$Platform_Cmd$map,
-			_easimonenko$bloggero_elm_mdl$Blog_PostPage$PageInfoMsg,
-			_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(path))
+			_easimonenko$bloggero$Blog_PostPage$PageInfoMsg,
+			_easimonenko$bloggero$Page_PageInfo$init(path))
 	};
 };
 
-var _easimonenko$bloggero_elm_mdl$Config$Config = F5(
+var _easimonenko$bloggero$Config$Config = F5(
 	function (a, b, c, d, e) {
 		return {title: a, mode: b, sections: c, copyright: d, links: e};
 	});
-var _easimonenko$bloggero_elm_mdl$Config$Section = F5(
+var _easimonenko$bloggero$Config$Section = F5(
 	function (a, b, c, d, e) {
 		return {id: a, title: b, route: c, icon: d, placement: e};
 	});
-var _easimonenko$bloggero_elm_mdl$Config$Copyright = F3(
+var _easimonenko$bloggero$Config$Copyright = F3(
 	function (a, b, c) {
 		return {text: a, url: b, email: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Config$Link = F3(
+var _easimonenko$bloggero$Config$Link = F3(
 	function (a, b, c) {
 		return {title: a, url: b, icon: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Config$UnknownMode = {ctor: 'UnknownMode'};
-var _easimonenko$bloggero_elm_mdl$Config$ProductionMode = {ctor: 'ProductionMode'};
-var _easimonenko$bloggero_elm_mdl$Config$DevelopmentMode = {ctor: 'DevelopmentMode'};
-var _easimonenko$bloggero_elm_mdl$Config$UnknownPlacement = {ctor: 'UnknownPlacement'};
-var _easimonenko$bloggero_elm_mdl$Config$SiteMapPlacement = {ctor: 'SiteMapPlacement'};
-var _easimonenko$bloggero_elm_mdl$Config$FooterPlacement = {ctor: 'FooterPlacement'};
-var _easimonenko$bloggero_elm_mdl$Config$DrawerPlacement = {ctor: 'DrawerPlacement'};
-var _easimonenko$bloggero_elm_mdl$Config$HeaderPlacement = {ctor: 'HeaderPlacement'};
-var _easimonenko$bloggero_elm_mdl$Config$ConfigFetchFail = function (a) {
+var _easimonenko$bloggero$Config$UnknownMode = {ctor: 'UnknownMode'};
+var _easimonenko$bloggero$Config$ProductionMode = {ctor: 'ProductionMode'};
+var _easimonenko$bloggero$Config$DevelopmentMode = {ctor: 'DevelopmentMode'};
+var _easimonenko$bloggero$Config$UnknownPlacement = {ctor: 'UnknownPlacement'};
+var _easimonenko$bloggero$Config$SiteMapPlacement = {ctor: 'SiteMapPlacement'};
+var _easimonenko$bloggero$Config$FooterPlacement = {ctor: 'FooterPlacement'};
+var _easimonenko$bloggero$Config$DrawerPlacement = {ctor: 'DrawerPlacement'};
+var _easimonenko$bloggero$Config$HeaderPlacement = {ctor: 'HeaderPlacement'};
+var _easimonenko$bloggero$Config$ConfigFetchFail = function (a) {
 	return {ctor: 'ConfigFetchFail', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Config$ConfigFetchSucceed = function (a) {
+var _easimonenko$bloggero$Config$ConfigFetchSucceed = function (a) {
 	return {ctor: 'ConfigFetchSucceed', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Config$init = A2(
+var _easimonenko$bloggero$Config$init = A2(
 	_elm_lang$core$Task$attempt,
 	function (result) {
 		var _p0 = result;
 		if (_p0.ctor === 'Err') {
-			return _easimonenko$bloggero_elm_mdl$Config$ConfigFetchFail(_p0._0);
+			return _easimonenko$bloggero$Config$ConfigFetchFail(_p0._0);
 		} else {
-			return _easimonenko$bloggero_elm_mdl$Config$ConfigFetchSucceed(_p0._0);
+			return _easimonenko$bloggero$Config$ConfigFetchSucceed(_p0._0);
 		}
 	},
 	_elm_lang$http$Http$toTask(
 		_elm_lang$http$Http$getString('/config.json')));
-var _easimonenko$bloggero_elm_mdl$Config$BadJson = F2(
+var _easimonenko$bloggero$Config$BadJson = F2(
 	function (a, b) {
 		return {ctor: 'BadJson', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Config$FetchFail = function (a) {
+var _easimonenko$bloggero$Config$FetchFail = function (a) {
 	return {ctor: 'FetchFail', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Config$Success = F2(
+var _easimonenko$bloggero$Config$Success = F2(
 	function (a, b) {
 		return {ctor: 'Success', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Config$update = function (msg) {
+var _easimonenko$bloggero$Config$update = function (msg) {
 	var _p1 = msg;
 	if (_p1.ctor === 'ConfigFetchFail') {
-		return _easimonenko$bloggero_elm_mdl$Config$FetchFail(_p1._0);
+		return _easimonenko$bloggero$Config$FetchFail(_p1._0);
 	} else {
 		var _p5 = _p1._0;
 		var linkDecoder = A4(
 			_elm_lang$core$Json_Decode$map3,
-			_easimonenko$bloggero_elm_mdl$Config$Link,
+			_easimonenko$bloggero$Config$Link,
 			A2(_elm_lang$core$Json_Decode$field, 'title', _elm_lang$core$Json_Decode$string),
 			A2(_elm_lang$core$Json_Decode$field, 'url', _elm_lang$core$Json_Decode$string),
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'icon', _elm_lang$core$Json_Decode$string)));
 		var copyrightDecoder = A4(
 			_elm_lang$core$Json_Decode$map3,
-			_easimonenko$bloggero_elm_mdl$Config$Copyright,
+			_easimonenko$bloggero$Config$Copyright,
 			A2(_elm_lang$core$Json_Decode$field, 'text', _elm_lang$core$Json_Decode$string),
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'url', _elm_lang$core$Json_Decode$string)),
@@ -29961,22 +29881,22 @@ var _easimonenko$bloggero_elm_mdl$Config$update = function (msg) {
 					var _p2 = item;
 					switch (_p2) {
 						case 'header':
-							return _easimonenko$bloggero_elm_mdl$Config$HeaderPlacement;
+							return _easimonenko$bloggero$Config$HeaderPlacement;
 						case 'drawer':
-							return _easimonenko$bloggero_elm_mdl$Config$DrawerPlacement;
+							return _easimonenko$bloggero$Config$DrawerPlacement;
 						case 'footer':
-							return _easimonenko$bloggero_elm_mdl$Config$FooterPlacement;
+							return _easimonenko$bloggero$Config$FooterPlacement;
 						case 'sitemap':
-							return _easimonenko$bloggero_elm_mdl$Config$SiteMapPlacement;
+							return _easimonenko$bloggero$Config$SiteMapPlacement;
 						default:
-							return _easimonenko$bloggero_elm_mdl$Config$UnknownPlacement;
+							return _easimonenko$bloggero$Config$UnknownPlacement;
 					}
 				},
 				_elm_lang$core$Json_Decode$string));
 		var sectionItemListDecoder = _elm_lang$core$Json_Decode$list(
 			A6(
 				_elm_lang$core$Json_Decode$map5,
-				_easimonenko$bloggero_elm_mdl$Config$Section,
+				_easimonenko$bloggero$Config$Section,
 				A2(_elm_lang$core$Json_Decode$field, 'id', _elm_lang$core$Json_Decode$string),
 				A2(_elm_lang$core$Json_Decode$field, 'title', _elm_lang$core$Json_Decode$string),
 				A2(_elm_lang$core$Json_Decode$field, 'route', _elm_lang$core$Json_Decode$string),
@@ -29989,17 +29909,17 @@ var _easimonenko$bloggero_elm_mdl$Config$update = function (msg) {
 				var _p3 = item;
 				switch (_p3) {
 					case 'development':
-						return _easimonenko$bloggero_elm_mdl$Config$DevelopmentMode;
+						return _easimonenko$bloggero$Config$DevelopmentMode;
 					case 'production':
-						return _easimonenko$bloggero_elm_mdl$Config$ProductionMode;
+						return _easimonenko$bloggero$Config$ProductionMode;
 					default:
-						return _easimonenko$bloggero_elm_mdl$Config$UnknownMode;
+						return _easimonenko$bloggero$Config$UnknownMode;
 				}
 			},
 			_elm_lang$core$Json_Decode$string);
 		var configDecoder = A6(
 			_elm_lang$core$Json_Decode$map5,
-			_easimonenko$bloggero_elm_mdl$Config$Config,
+			_easimonenko$bloggero$Config$Config,
 			A2(_elm_lang$core$Json_Decode$field, 'title', _elm_lang$core$Json_Decode$string),
 			A2(_elm_lang$core$Json_Decode$field, 'mode', modeDecoder),
 			A2(_elm_lang$core$Json_Decode$field, 'sections', sectionItemListDecoder),
@@ -30012,99 +29932,11 @@ var _easimonenko$bloggero_elm_mdl$Config$update = function (msg) {
 					_elm_lang$core$Json_Decode$list(linkDecoder))));
 		var _p4 = A2(_elm_lang$core$Json_Decode$decodeString, configDecoder, _p5);
 		if (_p4.ctor === 'Ok') {
-			return A2(_easimonenko$bloggero_elm_mdl$Config$Success, _p5, _p4._0);
+			return A2(_easimonenko$bloggero$Config$Success, _p5, _p4._0);
 		} else {
-			return A2(_easimonenko$bloggero_elm_mdl$Config$BadJson, _p5, _p4._0);
+			return A2(_easimonenko$bloggero$Config$BadJson, _p5, _p4._0);
 		}
 	}
-};
-
-var _easimonenko$bloggero_elm_mdl$Link_Link$view = function (model) {
-	var _p0 = model.inPlaceAlert;
-	if (_p0.ctor === 'Nothing') {
-		return A2(
-			_elm_lang$html$Html$a,
-			{
-				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$href(
-					A2(_elm_lang$core$Basics_ops['++'], '/#!', model.pagePath)),
-				_1: {ctor: '[]'}
-			},
-			{
-				ctor: '::',
-				_0: _elm_lang$html$Html$text(model.pageTitle),
-				_1: {ctor: '[]'}
-			});
-	} else {
-		return _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view(_p0._0);
-	}
-};
-var _easimonenko$bloggero_elm_mdl$Link_Link$update = F2(
-	function (msg, model) {
-		var _p1 = msg;
-		var _p2 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p1._0);
-		switch (_p2.ctor) {
-			case 'Success':
-				var _p3 = _p2._2;
-				return _elm_lang$core$String$isEmpty(_p3.title) ? {
-					ctor: '_Tuple2',
-					_0: _elm_lang$core$Native_Utils.update(
-						model,
-						{
-							inPlaceAlert: _elm_lang$core$Maybe$Just(
-								A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel, 'Page title is empty.'))
-						}),
-					_1: _elm_lang$core$Platform_Cmd$none
-				} : {
-					ctor: '_Tuple2',
-					_0: _elm_lang$core$Native_Utils.update(
-						model,
-						{pageTitle: _p3.title}),
-					_1: _elm_lang$core$Platform_Cmd$none
-				};
-			case 'BadJson':
-				var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p2._2);
-				return {
-					ctor: '_Tuple2',
-					_0: _elm_lang$core$Native_Utils.update(
-						model,
-						{
-							inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
-						}),
-					_1: _elm_lang$core$Platform_Cmd$none
-				};
-			default:
-				var inPlaceAlert = A2(
-					_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-					_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
-					_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p2._1));
-				return {
-					ctor: '_Tuple2',
-					_0: _elm_lang$core$Native_Utils.update(
-						model,
-						{
-							inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
-						}),
-					_1: _elm_lang$core$Platform_Cmd$none
-				};
-		}
-	});
-var _easimonenko$bloggero_elm_mdl$Link_Link$Model = F3(
-	function (a, b, c) {
-		return {pagePath: a, pageTitle: b, inPlaceAlert: c};
-	});
-var _easimonenko$bloggero_elm_mdl$Link_Link$PageInfoMsg = function (a) {
-	return {ctor: 'PageInfoMsg', _0: a};
-};
-var _easimonenko$bloggero_elm_mdl$Link_Link$init = function (pagePath) {
-	return {
-		ctor: '_Tuple2',
-		_0: {pagePath: pagePath, pageTitle: '', inPlaceAlert: _elm_lang$core$Maybe$Nothing},
-		_1: A2(
-			_elm_lang$core$Platform_Cmd$map,
-			_easimonenko$bloggero_elm_mdl$Link_Link$PageInfoMsg,
-			_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(pagePath))
-	};
 };
 
 var _elm_community$list_extra$List_Extra$greedyGroupsOfWithStep = F3(
@@ -31315,23 +31147,23 @@ var _elm_community$list_extra$List_Extra$init = function () {
 var _elm_community$list_extra$List_Extra$last = _elm_community$list_extra$List_Extra$foldl1(
 	_elm_lang$core$Basics$flip(_elm_lang$core$Basics$always));
 
-var _easimonenko$bloggero_elm_mdl$News_NewsInfo$NewsInfo = F2(
+var _easimonenko$bloggero$News_NewsInfo$NewsInfo = F2(
 	function (a, b) {
 		return {author: a, date: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsInfo$newsInfoDecoder = _elm_lang$core$Json_Decode$maybe(
+var _easimonenko$bloggero$News_NewsInfo$newsInfoDecoder = _elm_lang$core$Json_Decode$maybe(
 	A2(
 		_elm_lang$core$Json_Decode$field,
 		'news',
 		A3(
 			_elm_lang$core$Json_Decode$map2,
-			_easimonenko$bloggero_elm_mdl$News_NewsInfo$NewsInfo,
+			_easimonenko$bloggero$News_NewsInfo$NewsInfo,
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'author', _elm_lang$core$Json_Decode$string)),
 			_elm_lang$core$Json_Decode$maybe(
 				A2(_elm_lang$core$Json_Decode$field, 'date', _elm_lang$core$Json_Decode$string)))));
 
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$view = function (model) {
+var _easimonenko$bloggero$News_NewsPage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -31340,7 +31172,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$view = function (model) {
 			_0: A3(
 				_elm_community$maybe_extra$Maybe_Extra$unwrap,
 				_elm_lang$html$Html$text(''),
-				_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view,
+				_easimonenko$bloggero$Alert_InPlaceAlert$view,
 				model.inPlaceAlert),
 			_1: {
 				ctor: '::',
@@ -31446,42 +31278,42 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$Model = F5(
+var _easimonenko$bloggero$News_NewsPage$Model = F5(
 	function (a, b, c, d, e) {
 		return {inPlaceAlert: a, location: b, pageInfo: c, newsInfo: d, content: e};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$PageContentFetchFail = function (a) {
+var _easimonenko$bloggero$News_NewsPage$PageContentFetchFail = function (a) {
 	return {ctor: 'PageContentFetchFail', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$PageContentFetchSucceed = function (a) {
+var _easimonenko$bloggero$News_NewsPage$PageContentFetchSucceed = function (a) {
 	return {ctor: 'PageContentFetchSucceed', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$loadContent = function (model) {
+var _easimonenko$bloggero$News_NewsPage$loadContent = function (model) {
 	return A2(
 		_elm_lang$core$Task$attempt,
 		function (result) {
 			var _p0 = result;
 			if (_p0.ctor === 'Ok') {
-				return _easimonenko$bloggero_elm_mdl$News_NewsPage$PageContentFetchSucceed(_p0._0);
+				return _easimonenko$bloggero$News_NewsPage$PageContentFetchSucceed(_p0._0);
 			} else {
-				return _easimonenko$bloggero_elm_mdl$News_NewsPage$PageContentFetchFail(_p0._0);
+				return _easimonenko$bloggero$News_NewsPage$PageContentFetchFail(_p0._0);
 			}
 		},
 		_elm_lang$http$Http$toTask(
 			_elm_lang$http$Http$getString(
 				A2(
 					_elm_lang$core$Basics_ops['++'],
-					_easimonenko$bloggero_elm_mdl$Utils$pagePath(model.location),
+					_easimonenko$bloggero$Utils$pagePath(model.location),
 					'/index.markdown'))));
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$News_NewsPage$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$init = function (location) {
-	var path = _easimonenko$bloggero_elm_mdl$Utils$pagePath(location);
+var _easimonenko$bloggero$News_NewsPage$init = function (location) {
+	var path = _easimonenko$bloggero$Utils$pagePath(location);
 	var inPlaceAlert = A2(
-		_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-		_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel,
+		_easimonenko$bloggero$Alert_InPlaceAlert$init,
+		_easimonenko$bloggero$Alert_AlertLevel$InfoLevel,
 		A2(
 			_elm_lang$core$Basics_ops['++'],
 			'Loading news [',
@@ -31497,25 +31329,25 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$init = function (location) {
 		},
 		_1: A2(
 			_elm_lang$core$Platform_Cmd$map,
-			_easimonenko$bloggero_elm_mdl$News_NewsPage$PageInfoMsg,
-			_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(path))
+			_easimonenko$bloggero$News_NewsPage$PageInfoMsg,
+			_easimonenko$bloggero$Page_PageInfo$init(path))
 	};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$AlertOutMsg = F2(
+var _easimonenko$bloggero$News_NewsPage$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
+var _easimonenko$bloggero$News_NewsPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$News_NewsPage$update = F2(
 	function (msg, model) {
 		var _p1 = msg;
 		switch (_p1.ctor) {
 			case 'PageInfoMsg':
-				var _p2 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p1._0);
+				var _p2 = _easimonenko$bloggero$Page_PageInfo$update(_p1._0);
 				switch (_p2.ctor) {
 					case 'Success':
 						var _p4 = _p2._2;
-						var _p3 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero_elm_mdl$News_NewsInfo$newsInfoDecoder, _p2._1);
+						var _p3 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero$News_NewsInfo$newsInfoDecoder, _p2._1);
 						if (_p3.ctor === 'Ok') {
 							return {
 								ctor: '_Tuple3',
@@ -31525,11 +31357,11 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 										pageInfo: _elm_lang$core$Maybe$Just(_p4),
 										newsInfo: _p3._0
 									}),
-								_1: _easimonenko$bloggero_elm_mdl$News_NewsPage$loadContent(model),
-								_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+								_1: _easimonenko$bloggero$News_NewsPage$loadContent(model),
+								_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 							};
 						} else {
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p3._0);
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p3._0);
 							return {
 								ctor: '_Tuple3',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -31539,11 +31371,11 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 										inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 									}),
 								_1: _elm_lang$core$Platform_Cmd$none,
-								_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+								_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 							};
 						}
 					case 'BadJson':
-						var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p2._2);
+						var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p2._2);
 						return {
 							ctor: '_Tuple3',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -31552,13 +31384,13 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+							_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 						};
 					default:
 						var inPlaceAlert = A2(
-							_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-							_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
-							_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p2._1));
+							_easimonenko$bloggero$Alert_InPlaceAlert$init,
+							_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
+							_easimonenko$bloggero$Utils$toHumanReadable(_p2._1));
 						return {
 							ctor: '_Tuple3',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -31567,7 +31399,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+							_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 						};
 				}
 			case 'PageContentFetchSucceed':
@@ -31580,14 +31412,14 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 							inPlaceAlert: _elm_lang$core$Maybe$Nothing
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none,
-					_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+					_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 				};
 			default:
 				var _p5 = _p1._0;
 				if (_p5.ctor === 'BadStatus') {
 					var _p6 = _p5._0;
 					if (_elm_lang$core$Native_Utils.eq(_p6.status.code, 404)) {
-						var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'News content fetch fail: content file not found.');
+						var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'News content fetch fail: content file not found.');
 						return {
 							ctor: '_Tuple3',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -31596,12 +31428,12 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+							_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 						};
 					} else {
 						var inPlaceAlert = A2(
-							_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-							_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
+							_easimonenko$bloggero$Alert_InPlaceAlert$init,
+							_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
 							A2(
 								_elm_lang$core$Basics_ops['++'],
 								'Page content fetch: [',
@@ -31617,11 +31449,11 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+							_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 						};
 					}
 				} else {
-					var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'Page content fetch error.');
+					var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'Page content fetch error.');
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -31630,13 +31462,13 @@ var _easimonenko$bloggero_elm_mdl$News_NewsPage$update = F2(
 								inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: _easimonenko$bloggero_elm_mdl$News_NewsPage$NoneOutMsg
+						_2: _easimonenko$bloggero$News_NewsPage$NoneOutMsg
 					};
 				}
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$News_NewsList$view = function (model) {
+var _easimonenko$bloggero$News_NewsList$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -31655,7 +31487,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$view = function (model) {
 				_0: A2(
 					_elm_lang$core$Maybe$withDefault,
 					_elm_lang$html$Html$text(''),
-					A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+					A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 				_1: {
 					ctor: '::',
 					_0: A2(
@@ -31694,7 +31526,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$view = function (model) {
 													A2(_elm_lang$core$Basics_ops['++'], '/', newsId));
 												return {
 													ctor: '::',
-													_0: A2(_easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$linkFromPageInfo, path, _p0._0._0.pageInfo),
+													_0: A2(_easimonenko$bloggero$Link_LinkFromPageInfo$linkFromPageInfo, path, _p0._0._0.pageInfo),
 													_1: A2(
 														_elm_lang$core$Maybe$withDefault,
 														{ctor: '[]'},
@@ -31772,33 +31604,33 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsList$defaultConfig = {root: '/news', title: 'News List'};
-var _easimonenko$bloggero_elm_mdl$News_NewsList$Model = F4(
+var _easimonenko$bloggero$News_NewsList$defaultConfig = {root: '/news', title: 'News List'};
+var _easimonenko$bloggero$News_NewsList$Model = F4(
 	function (a, b, c, d) {
 		return {config: a, newsIds: b, newsPageInfos: c, inPlaceAlert: d};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsList$NewsPageInfo = F2(
+var _easimonenko$bloggero$News_NewsList$NewsPageInfo = F2(
 	function (a, b) {
 		return {pageInfo: a, newsInfo: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsList$Config = F2(
+var _easimonenko$bloggero$News_NewsList$Config = F2(
 	function (a, b) {
 		return {root: a, title: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsList$NewsPageInfoMsg = F2(
+var _easimonenko$bloggero$News_NewsList$NewsPageInfoMsg = F2(
 	function (a, b) {
 		return {ctor: 'NewsPageInfoMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsList$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$News_NewsList$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg = F2(
+var _easimonenko$bloggero$News_NewsList$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsList$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$News_NewsList$init = function (config) {
-	var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'News list loading...');
+var _easimonenko$bloggero$News_NewsList$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$News_NewsList$init = function (config) {
+	var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'News list loading...');
 	return {
 		ctor: '_Tuple3',
 		_0: {
@@ -31809,16 +31641,16 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$init = function (config) {
 		},
 		_1: A2(
 			_elm_lang$core$Platform_Cmd$map,
-			_easimonenko$bloggero_elm_mdl$News_NewsList$PageInfoMsg,
-			_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(config.root)),
-		_2: _easimonenko$bloggero_elm_mdl$News_NewsList$NoneOutMsg
+			_easimonenko$bloggero$News_NewsList$PageInfoMsg,
+			_easimonenko$bloggero$Page_PageInfo$init(config.root)),
+		_2: _easimonenko$bloggero$News_NewsList$NoneOutMsg
 	};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
+var _easimonenko$bloggero$News_NewsList$update = F2(
 	function (msg, model) {
 		var _p3 = msg;
 		if (_p3.ctor === 'PageInfoMsg') {
-			var _p4 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p3._0);
+			var _p4 = _easimonenko$bloggero$Page_PageInfo$update(_p3._0);
 			switch (_p4.ctor) {
 				case 'Success':
 					var newsIdsListDecoder = _elm_lang$core$Json_Decode$maybe(
@@ -31842,7 +31674,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 							_p5._0);
 						if (_elm_lang$core$List$isEmpty(newsIdsUnwraped)) {
 							var info = 'News list is empty.';
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel, info);
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$WarningLevel, info);
 							return {
 								ctor: '_Tuple3',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -31851,7 +31683,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 										inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 									}),
 								_1: _elm_lang$core$Platform_Cmd$none,
-								_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, info)
+								_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, info)
 							};
 						} else {
 							var newsPageInfoCmds = A2(
@@ -31859,15 +31691,15 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 								function (newsId) {
 									return A2(
 										_elm_lang$core$Platform_Cmd$map,
-										_easimonenko$bloggero_elm_mdl$News_NewsList$NewsPageInfoMsg(newsId),
-										_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(
+										_easimonenko$bloggero$News_NewsList$NewsPageInfoMsg(newsId),
+										_easimonenko$bloggero$Page_PageInfo$init(
 											A2(
 												_elm_lang$core$Basics_ops['++'],
 												model.config.root,
 												A2(_elm_lang$core$Basics_ops['++'], '/', newsId))));
 								},
 								newsIdsUnwraped);
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$SuccessLevel, 'News list loaded.');
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$SuccessLevel, 'News list loaded.');
 							return {
 								ctor: '_Tuple3',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -31877,12 +31709,12 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 										inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 									}),
 								_1: _elm_lang$core$Platform_Cmd$batch(newsPageInfoCmds),
-								_2: _easimonenko$bloggero_elm_mdl$News_NewsList$NoneOutMsg
+								_2: _easimonenko$bloggero$News_NewsList$NoneOutMsg
 							};
 						}
 					} else {
 						var _p6 = _p5._0;
-						var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p6);
+						var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p6);
 						return {
 							ctor: '_Tuple3',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -31891,15 +31723,15 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p6)
+							_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p6)
 						};
 					}
 				case 'FetchFail':
 					var info = A2(
 						_elm_lang$core$Basics_ops['++'],
 						'Http Error: ',
-						_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p4._1));
-					var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info);
+						_easimonenko$bloggero$Utils$toHumanReadable(_p4._1));
+					var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info);
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -31908,11 +31740,11 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 								inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 				default:
 					var info = A2(_elm_lang$core$Basics_ops['++'], 'Blog PageInfo: ', _p4._2);
-					var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info);
+					var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info);
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -31921,15 +31753,15 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 								inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 			}
 		} else {
 			var _p9 = _p3._0;
-			var _p7 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p3._1);
+			var _p7 = _easimonenko$bloggero$Page_PageInfo$update(_p3._1);
 			switch (_p7.ctor) {
 				case 'Success':
-					var _p8 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero_elm_mdl$News_NewsInfo$newsInfoDecoder, _p7._1);
+					var _p8 = A2(_elm_lang$core$Json_Decode$decodeString, _easimonenko$bloggero$News_NewsInfo$newsInfoDecoder, _p7._1);
 					if (_p8.ctor === 'Ok') {
 						var newsPageInfo = {pageInfo: _p7._2, newsInfo: _p8._0};
 						return {
@@ -31945,7 +31777,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 									inPlaceAlert: _elm_lang$core$Maybe$Nothing
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: _easimonenko$bloggero_elm_mdl$News_NewsList$NoneOutMsg
+							_2: _easimonenko$bloggero$News_NewsList$NoneOutMsg
 						};
 					} else {
 						var info = A2(_elm_lang$core$Basics_ops['++'], 'News Page Info: ', _p8._0);
@@ -31962,7 +31794,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 										model.newsPageInfos)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$none,
-							_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+							_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 						};
 					}
 				case 'FetchFail':
@@ -31975,7 +31807,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 							A2(
 								_elm_lang$core$Basics_ops['++'],
 								' | Http Error: ',
-								_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p7._1))));
+								_easimonenko$bloggero$Utils$toHumanReadable(_p7._1))));
 					return {
 						ctor: '_Tuple3',
 						_0: _elm_lang$core$Native_Utils.update(
@@ -31989,7 +31821,7 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 									model.newsPageInfos)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 				default:
 					var info = A2(_elm_lang$core$Basics_ops['++'], 'News Page Info: ', _p7._2);
@@ -32006,20 +31838,20 @@ var _easimonenko$bloggero_elm_mdl$News_NewsList$update = F2(
 									model.newsPageInfos)
 							}),
 						_1: _elm_lang$core$Platform_Cmd$none,
-						_2: A2(_easimonenko$bloggero_elm_mdl$News_NewsList$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, info)
+						_2: A2(_easimonenko$bloggero$News_NewsList$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, info)
 					};
 			}
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$Model = F3(
+var _easimonenko$bloggero$News_NewsSectionPage$Model = F3(
 	function (a, b, c) {
 		return {pageInfo: a, inPlaceAlert: b, newsList: c};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NewsListMsg = function (a) {
+var _easimonenko$bloggero$News_NewsSectionPage$NewsListMsg = function (a) {
 	return {ctor: 'NewsListMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$view = function (model) {
+var _easimonenko$bloggero$News_NewsSectionPage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -32047,30 +31879,30 @@ var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$view = function (model) {
 				_0: A2(
 					_elm_lang$core$Maybe$withDefault,
 					_elm_lang$html$Html$text(''),
-					A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+					A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 				_1: {
 					ctor: '::',
 					_0: function (_p0) {
 						return A2(
 							_elm_lang$html$Html$map,
-							_easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NewsListMsg,
-							_easimonenko$bloggero_elm_mdl$News_NewsList$view(_p0));
+							_easimonenko$bloggero$News_NewsSectionPage$NewsListMsg,
+							_easimonenko$bloggero$News_NewsList$view(_p0));
 					}(model.newsList),
 					_1: {ctor: '[]'}
 				}
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$News_NewsSectionPage$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$init = function (location) {
-	var newsListConfig = _easimonenko$bloggero_elm_mdl$News_NewsList$defaultConfig;
-	var _p1 = _easimonenko$bloggero_elm_mdl$News_NewsList$init(
+var _easimonenko$bloggero$News_NewsSectionPage$init = function (location) {
+	var newsListConfig = _easimonenko$bloggero$News_NewsList$defaultConfig;
+	var _p1 = _easimonenko$bloggero$News_NewsList$init(
 		_elm_lang$core$Native_Utils.update(
 			newsListConfig,
 			{
-				root: _easimonenko$bloggero_elm_mdl$Utils$pagePath(location)
+				root: _easimonenko$bloggero$Utils$pagePath(location)
 			}));
 	var newsList = _p1._0;
 	var newsListCmds = _p1._1;
@@ -32083,27 +31915,27 @@ var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$init = function (location
 				ctor: '::',
 				_0: A2(
 					_elm_lang$core$Platform_Cmd$map,
-					_easimonenko$bloggero_elm_mdl$News_NewsSectionPage$PageInfoMsg,
-					_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(
-						_easimonenko$bloggero_elm_mdl$Utils$pagePath(location))),
+					_easimonenko$bloggero$News_NewsSectionPage$PageInfoMsg,
+					_easimonenko$bloggero$Page_PageInfo$init(
+						_easimonenko$bloggero$Utils$pagePath(location))),
 				_1: {
 					ctor: '::',
-					_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NewsListMsg, newsListCmds),
+					_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$News_NewsSectionPage$NewsListMsg, newsListCmds),
 					_1: {ctor: '[]'}
 				}
 			})
 	};
 };
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$AlertOutMsg = F2(
+var _easimonenko$bloggero$News_NewsSectionPage$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$update = F2(
+var _easimonenko$bloggero$News_NewsSectionPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$News_NewsSectionPage$update = F2(
 	function (msg, model) {
 		var _p2 = msg;
 		if (_p2.ctor === 'PageInfoMsg') {
-			var _p3 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p2._0);
+			var _p3 = _easimonenko$bloggero$Page_PageInfo$update(_p2._0);
 			if (_p3.ctor === 'Success') {
 				return {
 					ctor: '_Tuple3',
@@ -32113,22 +31945,22 @@ var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$update = F2(
 							pageInfo: _elm_lang$core$Maybe$Just(_p3._2)
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none,
-					_2: _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NoneOutMsg
+					_2: _easimonenko$bloggero$News_NewsSectionPage$NoneOutMsg
 				};
 			} else {
-				return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NoneOutMsg};
+				return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$News_NewsSectionPage$NoneOutMsg};
 			}
 		} else {
-			var _p4 = A2(_easimonenko$bloggero_elm_mdl$News_NewsList$update, _p2._0, model.newsList);
+			var _p4 = A2(_easimonenko$bloggero$News_NewsList$update, _p2._0, model.newsList);
 			var newsList = _p4._0;
 			var newsListCmds = _p4._1;
 			var newsListOutMsg = _p4._2;
 			var outMsg = function () {
 				var _p5 = newsListOutMsg;
 				if (_p5.ctor === 'NoneOutMsg') {
-					return _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NoneOutMsg;
+					return _easimonenko$bloggero$News_NewsSectionPage$NoneOutMsg;
 				} else {
-					return A2(_easimonenko$bloggero_elm_mdl$News_NewsSectionPage$AlertOutMsg, _p5._0, _p5._1);
+					return A2(_easimonenko$bloggero$News_NewsSectionPage$AlertOutMsg, _p5._0, _p5._1);
 				}
 			}();
 			return {
@@ -32136,13 +31968,13 @@ var _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$update = F2(
 				_0: _elm_lang$core$Native_Utils.update(
 					model,
 					{newsList: newsList}),
-				_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$NewsListMsg, newsListCmds),
+				_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$News_NewsSectionPage$NewsListMsg, newsListCmds),
 				_2: outMsg
 			};
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$view = function (model) {
+var _easimonenko$bloggero$Page_Breadcrumbs$view = function (model) {
 	var _p0 = _elm_lang$core$List$reverse(model.paths);
 	if (_p0.ctor === '[]') {
 		return _elm_lang$html$Html$text('');
@@ -32209,10 +32041,10 @@ var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$view = function (model) {
 				}));
 	}
 };
-var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$update = F2(
+var _easimonenko$bloggero$Page_Breadcrumbs$update = F2(
 	function (msg, model) {
 		var _p1 = msg;
-		var _p2 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p1._0);
+		var _p2 = _easimonenko$bloggero$Page_PageInfo$update(_p1._0);
 		switch (_p2.ctor) {
 			case 'Success':
 				return {
@@ -32230,14 +32062,14 @@ var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$update = F2(
 				return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 		}
 	});
-var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$Model = F3(
+var _easimonenko$bloggero$Page_Breadcrumbs$Model = F3(
 	function (a, b, c) {
 		return {path: a, pageInfo: b, paths: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$Page_Breadcrumbs$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$init = function (path) {
+var _easimonenko$bloggero$Page_Breadcrumbs$init = function (path) {
 	var paths = A2(
 		F2(
 			function (x, y) {
@@ -32274,32 +32106,32 @@ var _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$init = function (path) {
 				function (_p5) {
 					return A2(
 						_elm_lang$core$Platform_Cmd$map,
-						_easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$PageInfoMsg,
-						_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(_p5));
+						_easimonenko$bloggero$Page_Breadcrumbs$PageInfoMsg,
+						_easimonenko$bloggero$Page_PageInfo$init(_p5));
 				},
 				paths))
 	};
 };
 
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$defaultConfig = {title: 'Home', root: '/home', blogRoot: '/blog', newsRoot: '/news'};
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$Model = F4(
+var _easimonenko$bloggero$Page_HomePage$defaultConfig = {title: 'Home', root: '/home', blogRoot: '/blog', newsRoot: '/news'};
+var _easimonenko$bloggero$Page_HomePage$Model = F4(
 	function (a, b, c, d) {
 		return {postList: a, newsList: b, config: c, mdl: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$Config = F4(
+var _easimonenko$bloggero$Page_HomePage$Config = F4(
 	function (a, b, c, d) {
 		return {root: a, title: b, blogRoot: c, newsRoot: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$Mdl = function (a) {
+var _easimonenko$bloggero$Page_HomePage$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$NewsListMsg = function (a) {
+var _easimonenko$bloggero$Page_HomePage$NewsListMsg = function (a) {
 	return {ctor: 'NewsListMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$PostListMsg = function (a) {
+var _easimonenko$bloggero$Page_HomePage$PostListMsg = function (a) {
 	return {ctor: 'PostListMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$view = function (model) {
+var _easimonenko$bloggero$Page_HomePage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{ctor: '[]'},
@@ -32317,28 +32149,28 @@ var _easimonenko$bloggero_elm_mdl$Page_HomePage$view = function (model) {
 				ctor: '::',
 				_0: A2(
 					_elm_lang$html$Html$map,
-					_easimonenko$bloggero_elm_mdl$Page_HomePage$NewsListMsg,
-					_easimonenko$bloggero_elm_mdl$News_NewsList$view(model.newsList)),
+					_easimonenko$bloggero$Page_HomePage$NewsListMsg,
+					_easimonenko$bloggero$News_NewsList$view(model.newsList)),
 				_1: {
 					ctor: '::',
 					_0: A2(
 						_elm_lang$html$Html$map,
-						_easimonenko$bloggero_elm_mdl$Page_HomePage$PostListMsg,
-						_easimonenko$bloggero_elm_mdl$Blog_PostList$view(model.postList)),
+						_easimonenko$bloggero$Page_HomePage$PostListMsg,
+						_easimonenko$bloggero$Blog_PostList$view(model.postList)),
 					_1: {ctor: '[]'}
 				}
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$AlertOutMsg = F2(
+var _easimonenko$bloggero$Page_HomePage$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$Page_HomePage$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$init = function (config) {
+var _easimonenko$bloggero$Page_HomePage$init = function (config) {
 	var _p0 = function () {
-		var newsListDefaultConfig = _easimonenko$bloggero_elm_mdl$News_NewsList$defaultConfig;
-		return _easimonenko$bloggero_elm_mdl$News_NewsList$init(
+		var newsListDefaultConfig = _easimonenko$bloggero$News_NewsList$defaultConfig;
+		return _easimonenko$bloggero$News_NewsList$init(
 			_elm_lang$core$Native_Utils.update(
 				newsListDefaultConfig,
 				{root: config.newsRoot}));
@@ -32347,8 +32179,8 @@ var _easimonenko$bloggero_elm_mdl$Page_HomePage$init = function (config) {
 	var newsListCmds = _p0._1;
 	var newsListOutMsg = _p0._2;
 	var _p1 = function () {
-		var postListDefaultConfig = _easimonenko$bloggero_elm_mdl$Blog_PostList$defaultConfig;
-		return _easimonenko$bloggero_elm_mdl$Blog_PostList$init(
+		var postListDefaultConfig = _easimonenko$bloggero$Blog_PostList$defaultConfig;
+		return _easimonenko$bloggero$Blog_PostList$init(
 			_elm_lang$core$Native_Utils.update(
 				postListDefaultConfig,
 				{root: config.blogRoot}));
@@ -32361,12 +32193,12 @@ var _easimonenko$bloggero_elm_mdl$Page_HomePage$init = function (config) {
 		if (_p2.ctor === 'NoneOutMsg') {
 			var _p3 = newsListOutMsg;
 			if (_p3.ctor === 'NoneOutMsg') {
-				return _easimonenko$bloggero_elm_mdl$Page_HomePage$NoneOutMsg;
+				return _easimonenko$bloggero$Page_HomePage$NoneOutMsg;
 			} else {
-				return A2(_easimonenko$bloggero_elm_mdl$Page_HomePage$AlertOutMsg, _p3._0, _p3._1);
+				return A2(_easimonenko$bloggero$Page_HomePage$AlertOutMsg, _p3._0, _p3._1);
 			}
 		} else {
-			return A2(_easimonenko$bloggero_elm_mdl$Page_HomePage$AlertOutMsg, _p2._0, _p2._1);
+			return A2(_easimonenko$bloggero$Page_HomePage$AlertOutMsg, _p2._0, _p2._1);
 		}
 	}();
 	return {
@@ -32375,31 +32207,31 @@ var _easimonenko$bloggero_elm_mdl$Page_HomePage$init = function (config) {
 		_1: _elm_lang$core$Platform_Cmd$batch(
 			{
 				ctor: '::',
-				_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page_HomePage$PostListMsg, postListCmds),
+				_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page_HomePage$PostListMsg, postListCmds),
 				_1: {
 					ctor: '::',
-					_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page_HomePage$NewsListMsg, newsListCmds),
+					_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page_HomePage$NewsListMsg, newsListCmds),
 					_1: {ctor: '[]'}
 				}
 			}),
 		_2: outMsg
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HomePage$update = F2(
+var _easimonenko$bloggero$Page_HomePage$update = F2(
 	function (msg, model) {
 		var _p4 = msg;
 		switch (_p4.ctor) {
 			case 'PostListMsg':
-				var _p5 = A2(_easimonenko$bloggero_elm_mdl$Blog_PostList$update, _p4._0, model.postList);
+				var _p5 = A2(_easimonenko$bloggero$Blog_PostList$update, _p4._0, model.postList);
 				var postList = _p5._0;
 				var postListCmds = _p5._1;
 				var postListOutMsg = _p5._2;
 				var outMsg = function () {
 					var _p6 = postListOutMsg;
 					if (_p6.ctor === 'NoneOutMsg') {
-						return _easimonenko$bloggero_elm_mdl$Page_HomePage$NoneOutMsg;
+						return _easimonenko$bloggero$Page_HomePage$NoneOutMsg;
 					} else {
-						return A2(_easimonenko$bloggero_elm_mdl$Page_HomePage$AlertOutMsg, _p6._0, _p6._1);
+						return A2(_easimonenko$bloggero$Page_HomePage$AlertOutMsg, _p6._0, _p6._1);
 					}
 				}();
 				return {
@@ -32407,20 +32239,20 @@ var _easimonenko$bloggero_elm_mdl$Page_HomePage$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{postList: postList}),
-					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page_HomePage$PostListMsg, postListCmds),
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page_HomePage$PostListMsg, postListCmds),
 					_2: outMsg
 				};
 			case 'NewsListMsg':
-				var _p7 = A2(_easimonenko$bloggero_elm_mdl$News_NewsList$update, _p4._0, model.newsList);
+				var _p7 = A2(_easimonenko$bloggero$News_NewsList$update, _p4._0, model.newsList);
 				var newsList = _p7._0;
 				var newsListCmds = _p7._1;
 				var newsListOutMsg = _p7._2;
 				var outMsg = function () {
 					var _p8 = newsListOutMsg;
 					if (_p8.ctor === 'NoneOutMsg') {
-						return _easimonenko$bloggero_elm_mdl$Page_HomePage$NoneOutMsg;
+						return _easimonenko$bloggero$Page_HomePage$NoneOutMsg;
 					} else {
-						return A2(_easimonenko$bloggero_elm_mdl$Page_HomePage$AlertOutMsg, _p8._0, _p8._1);
+						return A2(_easimonenko$bloggero$Page_HomePage$AlertOutMsg, _p8._0, _p8._1);
 					}
 				}();
 				return {
@@ -32428,39 +32260,39 @@ var _easimonenko$bloggero_elm_mdl$Page_HomePage$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{newsList: newsList}),
-					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page_HomePage$NewsListMsg, newsListCmds),
-					_2: _easimonenko$bloggero_elm_mdl$Page_HomePage$NoneOutMsg
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page_HomePage$NewsListMsg, newsListCmds),
+					_2: _easimonenko$bloggero$Page_HomePage$NoneOutMsg
 				};
 			default:
 				return A2(
-					_easimonenko$bloggero_elm_mdl$Utils$tuple2triple,
-					A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero_elm_mdl$Page_HomePage$Mdl, _p4._0, model),
-					_easimonenko$bloggero_elm_mdl$Page_HomePage$NoneOutMsg);
+					_easimonenko$bloggero$Utils$tuple2triple,
+					A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero$Page_HomePage$Mdl, _p4._0, model),
+					_easimonenko$bloggero$Page_HomePage$NoneOutMsg);
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$view = function (model) {
-	return _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view(model.inPlaceAlert);
+var _easimonenko$bloggero$Page_InPlaceAlertPage$view = function (model) {
+	return _easimonenko$bloggero$Alert_InPlaceAlert$view(model.inPlaceAlert);
 };
-var _easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$update = F2(
+var _easimonenko$bloggero$Page_InPlaceAlertPage$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$init = F2(
+var _easimonenko$bloggero$Page_InPlaceAlertPage$init = F2(
 	function (level, message) {
-		var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, level, message);
+		var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, level, message);
 		return {
 			ctor: '_Tuple2',
 			_0: {inPlaceAlert: inPlaceAlert},
 			_1: _elm_lang$core$Platform_Cmd$none
 		};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$Model = function (a) {
+var _easimonenko$bloggero$Page_InPlaceAlertPage$Model = function (a) {
 	return {inPlaceAlert: a};
 };
 
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$view = function (model) {
+var _easimonenko$bloggero$Page_HtmlPage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$article,
 		{ctor: '[]'},
@@ -32469,7 +32301,7 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$view = function (model) {
 			_0: A2(
 				_elm_lang$core$Maybe$withDefault,
 				_elm_lang$html$Html$text(''),
-				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 			_1: {
 				ctor: '::',
 				_0: A2(
@@ -32484,26 +32316,26 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$defaultOptions = {highlight: false};
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$Model = F4(
+var _easimonenko$bloggero$Page_HtmlPage$defaultOptions = {highlight: false};
+var _easimonenko$bloggero$Page_HtmlPage$Model = F4(
 	function (a, b, c, d) {
 		return {location: a, options: b, content: c, inPlaceAlert: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$Options = function (a) {
+var _easimonenko$bloggero$Page_HtmlPage$Options = function (a) {
 	return {highlight: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$PageContentFetchFail = function (a) {
+var _easimonenko$bloggero$Page_HtmlPage$PageContentFetchFail = function (a) {
 	return {ctor: 'PageContentFetchFail', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$PageContentFetchSucceed = function (a) {
+var _easimonenko$bloggero$Page_HtmlPage$PageContentFetchSucceed = function (a) {
 	return {ctor: 'PageContentFetchSucceed', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
+var _easimonenko$bloggero$Page_HtmlPage$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		switch (_p0.ctor) {
 			case 'PageInfoMsg':
-				var _p1 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p0._0);
+				var _p1 = _easimonenko$bloggero$Page_PageInfo$update(_p0._0);
 				switch (_p1.ctor) {
 					case 'Success':
 						var optionsDecoder = A4(
@@ -32514,8 +32346,8 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
 								'highlight',
 								_elm_lang$core$Json_Decode$bool,
 								false,
-								_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_easimonenko$bloggero_elm_mdl$Page_HtmlPage$Options)),
-							_easimonenko$bloggero_elm_mdl$Page_HtmlPage$defaultOptions,
+								_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_easimonenko$bloggero$Page_HtmlPage$Options)),
+							_easimonenko$bloggero$Page_HtmlPage$defaultOptions,
 							_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_elm_lang$core$Basics$identity));
 						var _p2 = A2(_elm_lang$core$Json_Decode$decodeString, optionsDecoder, _p1._1);
 						if (_p2.ctor === 'Ok') {
@@ -32529,20 +32361,20 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
 									function (result) {
 										var _p3 = result;
 										if (_p3.ctor === 'Ok') {
-											return _easimonenko$bloggero_elm_mdl$Page_HtmlPage$PageContentFetchSucceed(_p3._0);
+											return _easimonenko$bloggero$Page_HtmlPage$PageContentFetchSucceed(_p3._0);
 										} else {
-											return _easimonenko$bloggero_elm_mdl$Page_HtmlPage$PageContentFetchFail(_p3._0);
+											return _easimonenko$bloggero$Page_HtmlPage$PageContentFetchFail(_p3._0);
 										}
 									},
 									_elm_lang$http$Http$toTask(
 										_elm_lang$http$Http$getString(
 											A2(
 												_elm_lang$core$Basics_ops['++'],
-												_easimonenko$bloggero_elm_mdl$Utils$pagePath(model.location),
+												_easimonenko$bloggero$Utils$pagePath(model.location),
 												'/index.html'))))
 							};
 						} else {
-							var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p2._0);
+							var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p2._0);
 							return {
 								ctor: '_Tuple2',
 								_0: _elm_lang$core$Native_Utils.update(
@@ -32555,9 +32387,9 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
 						}
 					case 'FetchFail':
 						var inPlaceAlert = A2(
-							_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-							_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
-							_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p1._1));
+							_easimonenko$bloggero$Alert_InPlaceAlert$init,
+							_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
+							_easimonenko$bloggero$Utils$toHumanReadable(_p1._1));
 						return {
 							ctor: '_Tuple2',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -32568,7 +32400,7 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
 							_1: _elm_lang$core$Platform_Cmd$none
 						};
 					default:
-						var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p1._2);
+						var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p1._2);
 						return {
 							ctor: '_Tuple2',
 							_0: _elm_lang$core$Native_Utils.update(
@@ -32592,9 +32424,9 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
 				};
 			default:
 				var inPlaceAlert = A2(
-					_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init,
-					_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
-					_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p0._0));
+					_easimonenko$bloggero$Alert_InPlaceAlert$init,
+					_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
+					_easimonenko$bloggero$Utils$toHumanReadable(_p0._0));
 				return {
 					ctor: '_Tuple2',
 					_0: _elm_lang$core$Native_Utils.update(
@@ -32606,30 +32438,30 @@ var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$update = F2(
 				};
 		}
 	});
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$Page_HtmlPage$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_HtmlPage$init = function (location) {
+var _easimonenko$bloggero$Page_HtmlPage$init = function (location) {
 	return {
 		ctor: '_Tuple2',
 		_0: function () {
-			var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'Page content loading ...');
+			var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'Page content loading ...');
 			return {
 				location: location,
-				options: _easimonenko$bloggero_elm_mdl$Page_HtmlPage$defaultOptions,
+				options: _easimonenko$bloggero$Page_HtmlPage$defaultOptions,
 				content: _elm_lang$core$Maybe$Nothing,
 				inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 			};
 		}(),
 		_1: A2(
 			_elm_lang$core$Platform_Cmd$map,
-			_easimonenko$bloggero_elm_mdl$Page_HtmlPage$PageInfoMsg,
-			_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(
-				_easimonenko$bloggero_elm_mdl$Utils$pagePath(location)))
+			_easimonenko$bloggero$Page_HtmlPage$PageInfoMsg,
+			_easimonenko$bloggero$Page_PageInfo$init(
+				_easimonenko$bloggero$Utils$pagePath(location)))
 	};
 };
 
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$view = function (model) {
+var _easimonenko$bloggero$Page_MarkdownPage$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$article,
 		{ctor: '[]'},
@@ -32638,7 +32470,7 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$view = function (model) {
 			_0: A2(
 				_elm_lang$core$Maybe$withDefault,
 				_elm_lang$html$Html$text(''),
-				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 			_1: {
 				ctor: '::',
 				_0: A2(
@@ -32653,21 +32485,21 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$defaultOptions = {highlight: false};
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$Model = F4(
+var _easimonenko$bloggero$Page_MarkdownPage$defaultOptions = {highlight: false};
+var _easimonenko$bloggero$Page_MarkdownPage$Model = F4(
 	function (a, b, c, d) {
 		return {location: a, options: b, content: c, inPlaceAlert: d};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$Options = function (a) {
+var _easimonenko$bloggero$Page_MarkdownPage$Options = function (a) {
 	return {highlight: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$PageContentFetchFail = function (a) {
+var _easimonenko$bloggero$Page_MarkdownPage$PageContentFetchFail = function (a) {
 	return {ctor: 'PageContentFetchFail', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$PageContentFetchSucceed = function (a) {
+var _easimonenko$bloggero$Page_MarkdownPage$PageContentFetchSucceed = function (a) {
 	return {ctor: 'PageContentFetchSucceed', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$init = F2(
+var _easimonenko$bloggero$Page_MarkdownPage$init = F2(
 	function (location, json) {
 		var optionsDecoder = A4(
 			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$optional,
@@ -32677,13 +32509,13 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$init = F2(
 				'highlight',
 				_elm_lang$core$Json_Decode$bool,
 				false,
-				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_easimonenko$bloggero_elm_mdl$Page_MarkdownPage$Options)),
-			_easimonenko$bloggero_elm_mdl$Page_MarkdownPage$defaultOptions,
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_easimonenko$bloggero$Page_MarkdownPage$Options)),
+			_easimonenko$bloggero$Page_MarkdownPage$defaultOptions,
 			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_elm_lang$core$Basics$identity));
-		var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'Page content loading ...');
+		var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'Page content loading ...');
 		var model = {
 			location: location,
-			options: _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$defaultOptions,
+			options: _easimonenko$bloggero$Page_MarkdownPage$defaultOptions,
 			content: _elm_lang$core$Maybe$Nothing,
 			inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 		};
@@ -32702,22 +32534,22 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$init = F2(
 							function (result) {
 								var _p1 = result;
 								if (_p1.ctor === 'Ok') {
-									return _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$PageContentFetchSucceed(_p1._0);
+									return _easimonenko$bloggero$Page_MarkdownPage$PageContentFetchSucceed(_p1._0);
 								} else {
-									return _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$PageContentFetchFail(_p1._0);
+									return _easimonenko$bloggero$Page_MarkdownPage$PageContentFetchFail(_p1._0);
 								}
 							},
 							_elm_lang$http$Http$toTask(
 								_elm_lang$http$Http$getString(
 									A2(
 										_elm_lang$core$Basics_ops['++'],
-										_easimonenko$bloggero_elm_mdl$Utils$pagePath(model.location),
+										_easimonenko$bloggero$Utils$pagePath(model.location),
 										'/index.markdown')))),
 						_1: {ctor: '[]'}
 					})
 			};
 		} else {
-			var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, _p0._0);
+			var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, _p0._0);
 			return {
 				ctor: '_Tuple2',
 				_0: _elm_lang$core$Native_Utils.update(
@@ -32729,18 +32561,18 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$init = F2(
 			};
 		}
 	});
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$AlertOutMsg = F2(
+var _easimonenko$bloggero$Page_MarkdownPage$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$Page_MarkdownPage$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$update = F2(
+var _easimonenko$bloggero$Page_MarkdownPage$update = F2(
 	function (msg, model) {
 		var _p2 = msg;
 		if (_p2.ctor === 'PageContentFetchSucceed') {
 			var _p3 = _p2._0;
 			if (_elm_lang$core$String$isEmpty(_p3)) {
-				var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel, 'Page content is empty.');
+				var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$WarningLevel, 'Page content is empty.');
 				return {
 					ctor: '_Tuple3',
 					_0: _elm_lang$core$Native_Utils.update(
@@ -32750,7 +32582,7 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$update = F2(
 							inPlaceAlert: _elm_lang$core$Maybe$Just(inPlaceAlert)
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none,
-					_2: _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$NoneOutMsg
+					_2: _easimonenko$bloggero$Page_MarkdownPage$NoneOutMsg
 				};
 			} else {
 				return {
@@ -32762,11 +32594,11 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$update = F2(
 							inPlaceAlert: _elm_lang$core$Maybe$Nothing
 						}),
 					_1: _elm_lang$core$Platform_Cmd$none,
-					_2: _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$NoneOutMsg
+					_2: _easimonenko$bloggero$Page_MarkdownPage$NoneOutMsg
 				};
 			}
 		} else {
-			var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'Page content not found.');
+			var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'Page content not found.');
 			return {
 				ctor: '_Tuple3',
 				_0: _elm_lang$core$Native_Utils.update(
@@ -32776,22 +32608,22 @@ var _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$update = F2(
 					}),
 				_1: _elm_lang$core$Platform_Cmd$none,
 				_2: A2(
-					_easimonenko$bloggero_elm_mdl$Page_MarkdownPage$AlertOutMsg,
-					_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
-					_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p2._0))
+					_easimonenko$bloggero$Page_MarkdownPage$AlertOutMsg,
+					_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
+					_easimonenko$bloggero$Utils$toHumanReadable(_p2._0))
 			};
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$Model = F3(
+var _easimonenko$bloggero$Page_PageInfoRefresh$Model = F3(
 	function (a, b, c) {
 		return {mdl: a, title: b, info: c};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$ButtonRefresh = {ctor: 'ButtonRefresh'};
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$Mdl = function (a) {
+var _easimonenko$bloggero$Page_PageInfoRefresh$ButtonRefresh = {ctor: 'ButtonRefresh'};
+var _easimonenko$bloggero$Page_PageInfoRefresh$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$view = function (model) {
+var _easimonenko$bloggero$Page_PageInfoRefresh$view = function (model) {
 	return A2(
 		_debois$elm_mdl$Material_Options$div,
 		{
@@ -32856,7 +32688,7 @@ var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$view = function (model) {
 							ctor: '::',
 							_0: A5(
 								_debois$elm_mdl$Material_Button$render,
-								_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$Mdl,
+								_easimonenko$bloggero$Page_PageInfoRefresh$Mdl,
 								{
 									ctor: '::',
 									_0: 0,
@@ -32874,7 +32706,7 @@ var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$view = function (model) {
 											_0: _debois$elm_mdl$Material_Button$ripple,
 											_1: {
 												ctor: '::',
-												_0: _debois$elm_mdl$Material_Options$onClick(_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$ButtonRefresh),
+												_0: _debois$elm_mdl$Material_Options$onClick(_easimonenko$bloggero$Page_PageInfoRefresh$ButtonRefresh),
 												_1: {ctor: '[]'}
 											}
 										}
@@ -32892,92 +32724,92 @@ var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$view = function (model) {
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$init = F2(
+var _easimonenko$bloggero$Page_PageInfoRefresh$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$Page_PageInfoRefresh$init = F2(
 	function (title, info) {
 		return {
 			ctor: '_Tuple3',
 			_0: {mdl: _debois$elm_mdl$Material$model, title: title, info: info},
 			_1: _elm_lang$core$Platform_Cmd$none,
-			_2: _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$NoneOutMsg
+			_2: _easimonenko$bloggero$Page_PageInfoRefresh$NoneOutMsg
 		};
 	});
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$PageInfoRefresh = {ctor: 'PageInfoRefresh'};
-var _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$update = F2(
+var _easimonenko$bloggero$Page_PageInfoRefresh$PageInfoRefresh = {ctor: 'PageInfoRefresh'};
+var _easimonenko$bloggero$Page_PageInfoRefresh$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		if (_p0.ctor === 'Mdl') {
 			return A2(
-				_easimonenko$bloggero_elm_mdl$Utils$tuple2triple,
-				A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$Mdl, _p0._0, model),
-				_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$NoneOutMsg);
+				_easimonenko$bloggero$Utils$tuple2triple,
+				A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero$Page_PageInfoRefresh$Mdl, _p0._0, model),
+				_easimonenko$bloggero$Page_PageInfoRefresh$NoneOutMsg);
 		} else {
-			return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$PageInfoRefresh};
+			return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page_PageInfoRefresh$PageInfoRefresh};
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Page$Model = F5(
+var _easimonenko$bloggero$Page$Model = F5(
 	function (a, b, c, d, e) {
 		return {mdl: a, location: b, pageInfo: c, breadcrumbs: d, driverModel: e};
 	});
-var _easimonenko$bloggero_elm_mdl$Page$NewsPage = function (a) {
+var _easimonenko$bloggero$Page$NewsPage = function (a) {
 	return {ctor: 'NewsPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$NewsSectionPage = function (a) {
+var _easimonenko$bloggero$Page$NewsSectionPage = function (a) {
 	return {ctor: 'NewsSectionPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$PostPage = function (a) {
+var _easimonenko$bloggero$Page$PostPage = function (a) {
 	return {ctor: 'PostPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$BlogPage = function (a) {
+var _easimonenko$bloggero$Page$BlogPage = function (a) {
 	return {ctor: 'BlogPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$MarkdownPage = function (a) {
+var _easimonenko$bloggero$Page$MarkdownPage = function (a) {
 	return {ctor: 'MarkdownPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$HtmlPage = function (a) {
+var _easimonenko$bloggero$Page$HtmlPage = function (a) {
 	return {ctor: 'HtmlPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshPage = function (a) {
+var _easimonenko$bloggero$Page$PageInfoRefreshPage = function (a) {
 	return {ctor: 'PageInfoRefreshPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPage = function (a) {
+var _easimonenko$bloggero$Page$InPlaceAlertPage = function (a) {
 	return {ctor: 'InPlaceAlertPage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$HomePage = function (a) {
+var _easimonenko$bloggero$Page$HomePage = function (a) {
 	return {ctor: 'HomePage', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$BreadcrumbsMsg = function (a) {
+var _easimonenko$bloggero$Page$BreadcrumbsMsg = function (a) {
 	return {ctor: 'BreadcrumbsMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$NewsPageMsg = function (a) {
+var _easimonenko$bloggero$Page$NewsPageMsg = function (a) {
 	return {ctor: 'NewsPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$NewsSectionPageMsg = function (a) {
+var _easimonenko$bloggero$Page$NewsSectionPageMsg = function (a) {
 	return {ctor: 'NewsSectionPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$PostPageMsg = function (a) {
+var _easimonenko$bloggero$Page$PostPageMsg = function (a) {
 	return {ctor: 'PostPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$BlogPageMsg = function (a) {
+var _easimonenko$bloggero$Page$BlogPageMsg = function (a) {
 	return {ctor: 'BlogPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$MarkdownPageMsg = function (a) {
+var _easimonenko$bloggero$Page$MarkdownPageMsg = function (a) {
 	return {ctor: 'MarkdownPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$HtmlPageMsg = function (a) {
+var _easimonenko$bloggero$Page$HtmlPageMsg = function (a) {
 	return {ctor: 'HtmlPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg = function (a) {
+var _easimonenko$bloggero$Page$InPlaceAlertPageMsg = function (a) {
 	return {ctor: 'InPlaceAlertPageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$HomePageMsg = function (a) {
+var _easimonenko$bloggero$Page$HomePageMsg = function (a) {
 	return {ctor: 'HomePageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshMsg = function (a) {
+var _easimonenko$bloggero$Page$PageInfoRefreshMsg = function (a) {
 	return {ctor: 'PageInfoRefreshMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$view = function (model) {
+var _easimonenko$bloggero$Page$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
 		{
@@ -32988,11 +32820,11 @@ var _easimonenko$bloggero_elm_mdl$Page$view = function (model) {
 		{
 			ctor: '::',
 			_0: ((!_elm_lang$core$Native_Utils.eq(
-				_easimonenko$bloggero_elm_mdl$Utils$pagePath(model.location),
+				_easimonenko$bloggero$Utils$pagePath(model.location),
 				'/home')) && (!_elm_lang$core$Native_Utils.eq(model.pageInfo, _elm_lang$core$Maybe$Nothing))) ? A2(
 				_elm_lang$html$Html$map,
-				_easimonenko$bloggero_elm_mdl$Page$BreadcrumbsMsg,
-				_easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$view(model.breadcrumbs)) : _elm_lang$html$Html$text(''),
+				_easimonenko$bloggero$Page$BreadcrumbsMsg,
+				_easimonenko$bloggero$Page_Breadcrumbs$view(model.breadcrumbs)) : _elm_lang$html$Html$text(''),
 			_1: {
 				ctor: '::',
 				_0: function () {
@@ -33001,77 +32833,77 @@ var _easimonenko$bloggero_elm_mdl$Page$view = function (model) {
 						case 'HomePage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$HomePageMsg,
-								_easimonenko$bloggero_elm_mdl$Page_HomePage$view(_p0._0));
+								_easimonenko$bloggero$Page$HomePageMsg,
+								_easimonenko$bloggero$Page_HomePage$view(_p0._0));
 						case 'InPlaceAlertPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg,
-								_easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$view(_p0._0));
+								_easimonenko$bloggero$Page$InPlaceAlertPageMsg,
+								_easimonenko$bloggero$Page_InPlaceAlertPage$view(_p0._0));
 						case 'PageInfoRefreshPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshMsg,
-								_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$view(_p0._0));
+								_easimonenko$bloggero$Page$PageInfoRefreshMsg,
+								_easimonenko$bloggero$Page_PageInfoRefresh$view(_p0._0));
 						case 'HtmlPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$HtmlPageMsg,
-								_easimonenko$bloggero_elm_mdl$Page_HtmlPage$view(_p0._0));
+								_easimonenko$bloggero$Page$HtmlPageMsg,
+								_easimonenko$bloggero$Page_HtmlPage$view(_p0._0));
 						case 'MarkdownPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$MarkdownPageMsg,
-								_easimonenko$bloggero_elm_mdl$Page_MarkdownPage$view(_p0._0));
+								_easimonenko$bloggero$Page$MarkdownPageMsg,
+								_easimonenko$bloggero$Page_MarkdownPage$view(_p0._0));
 						case 'BlogPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$BlogPageMsg,
-								_easimonenko$bloggero_elm_mdl$Blog_BlogPage$view(_p0._0));
+								_easimonenko$bloggero$Page$BlogPageMsg,
+								_easimonenko$bloggero$Blog_BlogPage$view(_p0._0));
 						case 'PostPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$PostPageMsg,
-								_easimonenko$bloggero_elm_mdl$Blog_PostPage$view(_p0._0));
+								_easimonenko$bloggero$Page$PostPageMsg,
+								_easimonenko$bloggero$Blog_PostPage$view(_p0._0));
 						case 'NewsSectionPage':
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$NewsSectionPageMsg,
-								_easimonenko$bloggero_elm_mdl$News_NewsSectionPage$view(_p0._0));
+								_easimonenko$bloggero$Page$NewsSectionPageMsg,
+								_easimonenko$bloggero$News_NewsSectionPage$view(_p0._0));
 						default:
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Page$NewsPageMsg,
-								_easimonenko$bloggero_elm_mdl$News_NewsPage$view(_p0._0));
+								_easimonenko$bloggero$Page$NewsPageMsg,
+								_easimonenko$bloggero$News_NewsPage$view(_p0._0));
 					}
 				}(),
 				_1: {ctor: '[]'}
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Page$PageInfoMsg = function (a) {
+var _easimonenko$bloggero$Page$PageInfoMsg = function (a) {
 	return {ctor: 'PageInfoMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$Mdl = function (a) {
+var _easimonenko$bloggero$Page$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Page$AlertOutMsg = F2(
+var _easimonenko$bloggero$Page$AlertOutMsg = F2(
 	function (a, b) {
 		return {ctor: 'AlertOutMsg', _0: a, _1: b};
 	});
-var _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg = {ctor: 'NoneOutMsg'};
-var _easimonenko$bloggero_elm_mdl$Page$init = function (location) {
-	var path = _easimonenko$bloggero_elm_mdl$Utils$pagePath(location);
+var _easimonenko$bloggero$Page$NoneOutMsg = {ctor: 'NoneOutMsg'};
+var _easimonenko$bloggero$Page$init = function (location) {
+	var path = _easimonenko$bloggero$Utils$pagePath(location);
 	var _p1 = A2(
-		_easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$init,
-		_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel,
+		_easimonenko$bloggero$Page_InPlaceAlertPage$init,
+		_easimonenko$bloggero$Alert_AlertLevel$InfoLevel,
 		A2(
 			_elm_lang$core$Basics_ops['++'],
 			'Loading of page ',
 			A2(_elm_lang$core$Basics_ops['++'], path, ' ...')));
 	var inPlaceAlertPage = _p1._0;
 	var inPlaceAlertPageCmds = _p1._1;
-	var _p2 = _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$init(path);
+	var _p2 = _easimonenko$bloggero$Page_Breadcrumbs$init(path);
 	var breadcrumbs = _p2._0;
 	var breadcrumbsCmds = _p2._1;
 	return {
@@ -33081,46 +32913,46 @@ var _easimonenko$bloggero_elm_mdl$Page$init = function (location) {
 			location: location,
 			pageInfo: _elm_lang$core$Maybe$Nothing,
 			breadcrumbs: breadcrumbs,
-			driverModel: _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPage(inPlaceAlertPage)
+			driverModel: _easimonenko$bloggero$Page$InPlaceAlertPage(inPlaceAlertPage)
 		},
 		_1: _elm_lang$core$Platform_Cmd$batch(
 			{
 				ctor: '::',
 				_0: A2(
 					_elm_lang$core$Platform_Cmd$map,
-					_easimonenko$bloggero_elm_mdl$Page$PageInfoMsg,
-					_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(path)),
+					_easimonenko$bloggero$Page$PageInfoMsg,
+					_easimonenko$bloggero$Page_PageInfo$init(path)),
 				_1: {
 					ctor: '::',
-					_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
+					_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
 					_1: {
 						ctor: '::',
-						_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$BreadcrumbsMsg, breadcrumbsCmds),
+						_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$BreadcrumbsMsg, breadcrumbsCmds),
 						_1: {ctor: '[]'}
 					}
 				}
 			}),
-		_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+		_2: _easimonenko$bloggero$Page$NoneOutMsg
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Page$update = F2(
+var _easimonenko$bloggero$Page$update = F2(
 	function (msg, model) {
 		var _p3 = msg;
 		switch (_p3.ctor) {
 			case 'Mdl':
 				return A2(
-					_easimonenko$bloggero_elm_mdl$Utils$tuple2triple,
-					A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero_elm_mdl$Page$Mdl, _p3._0, model),
-					_easimonenko$bloggero_elm_mdl$Page$NoneOutMsg);
+					_easimonenko$bloggero$Utils$tuple2triple,
+					A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero$Page$Mdl, _p3._0, model),
+					_easimonenko$bloggero$Page$NoneOutMsg);
 			case 'PageInfoMsg':
-				var _p4 = _easimonenko$bloggero_elm_mdl$Page_PageInfo$update(_p3._0);
+				var _p4 = _easimonenko$bloggero$Page_PageInfo$update(_p3._0);
 				switch (_p4.ctor) {
 					case 'Success':
 						var _p15 = _p4._2;
 						var _p5 = _p15.driver;
 						switch (_p5) {
 							case 'markdown':
-								var _p6 = A2(_easimonenko$bloggero_elm_mdl$Page_MarkdownPage$init, model.location, _p4._1);
+								var _p6 = A2(_easimonenko$bloggero$Page_MarkdownPage$init, model.location, _p4._1);
 								var page = _p6._0;
 								var pageCmds = _p6._1;
 								return {
@@ -33129,13 +32961,13 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$MarkdownPage(page)
+											driverModel: _easimonenko$bloggero$Page$MarkdownPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$MarkdownPageMsg, pageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = markdown')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$MarkdownPageMsg, pageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = markdown')
 								};
 							case 'html':
-								var _p7 = _easimonenko$bloggero_elm_mdl$Page_HtmlPage$init(model.location);
+								var _p7 = _easimonenko$bloggero$Page_HtmlPage$init(model.location);
 								var page = _p7._0;
 								var pageCmds = _p7._1;
 								return {
@@ -33144,15 +32976,15 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$HtmlPage(page)
+											driverModel: _easimonenko$bloggero$Page$HtmlPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$HtmlPageMsg, pageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = html')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$HtmlPageMsg, pageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = html')
 								};
 							case 'home':
 								var _p8 = function () {
-									var defaultConfig = _easimonenko$bloggero_elm_mdl$Page_HomePage$defaultConfig;
-									return _easimonenko$bloggero_elm_mdl$Page_HomePage$init(
+									var defaultConfig = _easimonenko$bloggero$Page_HomePage$defaultConfig;
+									return _easimonenko$bloggero$Page_HomePage$init(
 										_elm_lang$core$Native_Utils.update(
 											defaultConfig,
 											{title: _p15.title}));
@@ -33166,15 +32998,15 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$HomePage(homePage)
+											driverModel: _easimonenko$bloggero$Page$HomePage(homePage)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$HomePageMsg, homePageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = home')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$HomePageMsg, homePageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = home')
 								};
 							case 'blog':
 								var _p9 = function () {
-									var defaultConfig = _easimonenko$bloggero_elm_mdl$Blog_BlogPage$defaultConfig;
-									return _easimonenko$bloggero_elm_mdl$Blog_BlogPage$init(
+									var defaultConfig = _easimonenko$bloggero$Blog_BlogPage$defaultConfig;
+									return _easimonenko$bloggero$Blog_BlogPage$init(
 										_elm_lang$core$Native_Utils.update(
 											defaultConfig,
 											{title: _p15.title}));
@@ -33188,13 +33020,13 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$BlogPage(blogPage)
+											driverModel: _easimonenko$bloggero$Page$BlogPage(blogPage)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$BlogPageMsg, blogPageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = blog')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$BlogPageMsg, blogPageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = blog')
 								};
 							case 'post':
-								var _p10 = _easimonenko$bloggero_elm_mdl$Blog_PostPage$init(model.location);
+								var _p10 = _easimonenko$bloggero$Blog_PostPage$init(model.location);
 								var page = _p10._0;
 								var pageCmds = _p10._1;
 								return {
@@ -33203,13 +33035,13 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$PostPage(page)
+											driverModel: _easimonenko$bloggero$Page$PostPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$PostPageMsg, pageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = post')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$PostPageMsg, pageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = post')
 								};
 							case 'news-section':
-								var _p11 = _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$init(model.location);
+								var _p11 = _easimonenko$bloggero$News_NewsSectionPage$init(model.location);
 								var page = _p11._0;
 								var pageCmds = _p11._1;
 								return {
@@ -33218,13 +33050,13 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$NewsSectionPage(page)
+											driverModel: _easimonenko$bloggero$Page$NewsSectionPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$NewsSectionPageMsg, pageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = news-section')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$NewsSectionPageMsg, pageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = news-section')
 								};
 							case 'news':
-								var _p12 = _easimonenko$bloggero_elm_mdl$News_NewsPage$init(model.location);
+								var _p12 = _easimonenko$bloggero$News_NewsPage$init(model.location);
 								var page = _p12._0;
 								var pageCmds = _p12._1;
 								return {
@@ -33233,16 +33065,16 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$NewsPage(page)
+											driverModel: _easimonenko$bloggero$Page$NewsPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$NewsPageMsg, pageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = news')
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$NewsPageMsg, pageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'PageInfoFetchSucceed: driver = news')
 								};
 							default:
 								var _p14 = _p5;
 								var _p13 = A2(
-									_easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$init,
-									_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel,
+									_easimonenko$bloggero$Page_InPlaceAlertPage$init,
+									_easimonenko$bloggero$Alert_AlertLevel$WarningLevel,
 									A2(_elm_lang$core$Basics_ops['++'], 'Unknown type of page: ', _p14));
 								var inPlaceAlertPage = _p13._0;
 								var inPlaceAlertPageCmds = _p13._1;
@@ -33252,12 +33084,12 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 										model,
 										{
 											pageInfo: _elm_lang$core$Maybe$Just(_p15),
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPage(inPlaceAlertPage)
+											driverModel: _easimonenko$bloggero$Page$InPlaceAlertPage(inPlaceAlertPage)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
 									_2: A2(
-										_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg,
-										_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$WarningLevel,
+										_easimonenko$bloggero$Page$AlertOutMsg,
+										_easimonenko$bloggero$Alert_AlertLevel$WarningLevel,
 										A2(_elm_lang$core$Basics_ops['++'], 'Page info fetch succeed, but unknown content type: ', _p14))
 								};
 						}
@@ -33265,7 +33097,7 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						var _p16 = _p4._1;
 						switch (_p16.ctor) {
 							case 'NetworkError':
-								var _p17 = A2(_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$init, 'Network Error', 'Network error: try refreshing the page later.');
+								var _p17 = A2(_easimonenko$bloggero$Page_PageInfoRefresh$init, 'Network Error', 'Network error: try refreshing the page later.');
 								var page = _p17._0;
 								var cmds = _p17._1;
 								var outMsg = _p17._2;
@@ -33274,13 +33106,13 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 									_0: _elm_lang$core$Native_Utils.update(
 										model,
 										{
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshPage(page)
+											driverModel: _easimonenko$bloggero$Page$PageInfoRefreshPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshMsg, cmds),
-									_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$PageInfoRefreshMsg, cmds),
+									_2: _easimonenko$bloggero$Page$NoneOutMsg
 								};
 							case 'Timeout':
-								var _p18 = A2(_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$init, 'Http Timeout', 'Http timeout: try refreshing the page later.');
+								var _p18 = A2(_easimonenko$bloggero$Page_PageInfoRefresh$init, 'Http Timeout', 'Http timeout: try refreshing the page later.');
 								var page = _p18._0;
 								var cmds = _p18._1;
 								var outMsg = _p18._2;
@@ -33289,15 +33121,15 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 									_0: _elm_lang$core$Native_Utils.update(
 										model,
 										{
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshPage(page)
+											driverModel: _easimonenko$bloggero$Page$PageInfoRefreshPage(page)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshMsg, cmds),
-									_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$PageInfoRefreshMsg, cmds),
+									_2: _easimonenko$bloggero$Page$NoneOutMsg
 								};
 							default:
-								var errorInfo = _easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p16);
-								var alertLevel = _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel;
-								var _p19 = A2(_easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$init, alertLevel, errorInfo);
+								var errorInfo = _easimonenko$bloggero$Utils$toHumanReadable(_p16);
+								var alertLevel = _easimonenko$bloggero$Alert_AlertLevel$DangerLevel;
+								var _p19 = A2(_easimonenko$bloggero$Page_InPlaceAlertPage$init, alertLevel, errorInfo);
 								var inPlaceAlertPage = _p19._0;
 								var inPlaceAlertPageCmds = _p19._1;
 								return {
@@ -33305,17 +33137,17 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 									_0: _elm_lang$core$Native_Utils.update(
 										model,
 										{
-											driverModel: _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPage(inPlaceAlertPage)
+											driverModel: _easimonenko$bloggero$Page$InPlaceAlertPage(inPlaceAlertPage)
 										}),
-									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
-									_2: A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, alertLevel, errorInfo)
+									_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
+									_2: A2(_easimonenko$bloggero$Page$AlertOutMsg, alertLevel, errorInfo)
 								};
 						}
 					default:
 						var _p21 = _p4._2;
 						var _p20 = A2(
-							_easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$init,
-							_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
+							_easimonenko$bloggero$Page_InPlaceAlertPage$init,
+							_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
 							A2(
 								_elm_lang$core$Basics_ops['++'],
 								_p4._0,
@@ -33328,26 +33160,26 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 								model,
 								{
 									pageInfo: _elm_lang$core$Maybe$Nothing,
-									driverModel: _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPage(inPlaceAlertPage)
+									driverModel: _easimonenko$bloggero$Page$InPlaceAlertPage(inPlaceAlertPage)
 								}),
-							_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
+							_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
 							_2: A2(
-								_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg,
-								_easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel,
+								_easimonenko$bloggero$Page$AlertOutMsg,
+								_easimonenko$bloggero$Alert_AlertLevel$DangerLevel,
 								A2(_elm_lang$core$Basics_ops['++'], 'Page info fetch succeed, but parsed fail: ', _p21))
 						};
 				}
 			case 'PageInfoRefreshMsg':
 				var _p22 = model.driverModel;
 				if (_p22.ctor === 'PageInfoRefreshPage') {
-					var _p23 = A2(_easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$update, _p3._0, _p22._0);
+					var _p23 = A2(_easimonenko$bloggero$Page_PageInfoRefresh$update, _p3._0, _p22._0);
 					var page = _p23._0;
 					var pageInfoRefreshCmds = _p23._1;
 					var outMsg = _p23._2;
 					var _p24 = outMsg;
 					if (_p24.ctor === 'PageInfoRefresh') {
-						var path = _easimonenko$bloggero_elm_mdl$Utils$pagePath(model.location);
-						var _p25 = _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$init(path);
+						var path = _easimonenko$bloggero$Utils$pagePath(model.location);
+						var _p25 = _easimonenko$bloggero$Page_Breadcrumbs$init(path);
 						var breadcrumbs = _p25._0;
 						var breadcrumbsCmds = _p25._1;
 						return {
@@ -33356,35 +33188,35 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 								model,
 								{
 									breadcrumbs: breadcrumbs,
-									driverModel: _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshPage(page)
+									driverModel: _easimonenko$bloggero$Page$PageInfoRefreshPage(page)
 								}),
 							_1: _elm_lang$core$Platform_Cmd$batch(
 								{
 									ctor: '::',
-									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$PageInfoRefreshMsg, pageInfoRefreshCmds),
+									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$PageInfoRefreshMsg, pageInfoRefreshCmds),
 									_1: {
 										ctor: '::',
 										_0: A2(
 											_elm_lang$core$Platform_Cmd$map,
-											_easimonenko$bloggero_elm_mdl$Page$PageInfoMsg,
-											_easimonenko$bloggero_elm_mdl$Page_PageInfo$init(path)),
+											_easimonenko$bloggero$Page$PageInfoMsg,
+											_easimonenko$bloggero$Page_PageInfo$init(path)),
 										_1: {
 											ctor: '::',
-											_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$BreadcrumbsMsg, breadcrumbsCmds),
+											_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$BreadcrumbsMsg, breadcrumbsCmds),
 											_1: {ctor: '[]'}
 										}
 									}
 								}),
-							_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+							_2: _easimonenko$bloggero$Page$NoneOutMsg
 						};
 					} else {
-						return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+						return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 					}
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'BreadcrumbsMsg':
-				var _p26 = A2(_easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$update, _p3._0, model.breadcrumbs);
+				var _p26 = A2(_easimonenko$bloggero$Page_Breadcrumbs$update, _p3._0, model.breadcrumbs);
 				var breadcrumbs = _p26._0;
 				var breadcrumbsCmds = _p26._1;
 				return {
@@ -33392,13 +33224,13 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{breadcrumbs: breadcrumbs}),
-					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$BreadcrumbsMsg, breadcrumbsCmds),
-					_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$BreadcrumbsMsg, breadcrumbsCmds),
+					_2: _easimonenko$bloggero$Page$NoneOutMsg
 				};
 			case 'HomePageMsg':
 				var _p27 = model.driverModel;
 				if (_p27.ctor === 'HomePage') {
-					var _p28 = A2(_easimonenko$bloggero_elm_mdl$Page_HomePage$update, _p3._0, _p27._0);
+					var _p28 = A2(_easimonenko$bloggero$Page_HomePage$update, _p3._0, _p27._0);
 					var homePageNext = _p28._0;
 					var homePageCmds = _p28._1;
 					var homePageOutMsg = _p28._2;
@@ -33407,18 +33239,18 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$HomePage(homePageNext)
+								driverModel: _easimonenko$bloggero$Page$HomePage(homePageNext)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$HomePageMsg, homePageCmds),
-						_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$HomePageMsg, homePageCmds),
+						_2: _easimonenko$bloggero$Page$NoneOutMsg
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'BlogPageMsg':
 				var _p29 = model.driverModel;
 				if (_p29.ctor === 'BlogPage') {
-					var _p30 = A2(_easimonenko$bloggero_elm_mdl$Blog_BlogPage$update, _p3._0, _p29._0);
+					var _p30 = A2(_easimonenko$bloggero$Blog_BlogPage$update, _p3._0, _p29._0);
 					var blogPageNext = _p30._0;
 					var blogPageCmds = _p30._1;
 					var blogPageOutMsg = _p30._2;
@@ -33427,18 +33259,18 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$BlogPage(blogPageNext)
+								driverModel: _easimonenko$bloggero$Page$BlogPage(blogPageNext)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$BlogPageMsg, blogPageCmds),
-						_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$BlogPageMsg, blogPageCmds),
+						_2: _easimonenko$bloggero$Page$NoneOutMsg
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'PostPageMsg':
 				var _p31 = model.driverModel;
 				if (_p31.ctor === 'PostPage') {
-					var _p32 = A2(_easimonenko$bloggero_elm_mdl$Blog_PostPage$update, _p3._0, _p31._0);
+					var _p32 = A2(_easimonenko$bloggero$Blog_PostPage$update, _p3._0, _p31._0);
 					var pageUpdated = _p32._0;
 					var cmds = _p32._1;
 					return {
@@ -33446,18 +33278,18 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$PostPage(pageUpdated)
+								driverModel: _easimonenko$bloggero$Page$PostPage(pageUpdated)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$PostPageMsg, cmds),
-						_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$PostPageMsg, cmds),
+						_2: _easimonenko$bloggero$Page$NoneOutMsg
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'InPlaceAlertPageMsg':
 				var _p33 = model.driverModel;
 				if (_p33.ctor === 'InPlaceAlertPage') {
-					var _p34 = A2(_easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$update, _p3._0, _p33._0);
+					var _p34 = A2(_easimonenko$bloggero$Page_InPlaceAlertPage$update, _p3._0, _p33._0);
 					var inPlaceAlertPageUpdated = _p34._0;
 					var inPlaceAlertPageCmds = _p34._1;
 					return {
@@ -33465,18 +33297,18 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPage(inPlaceAlertPageUpdated)
+								driverModel: _easimonenko$bloggero$Page$InPlaceAlertPage(inPlaceAlertPageUpdated)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
-						_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$InPlaceAlertPageMsg, inPlaceAlertPageCmds),
+						_2: _easimonenko$bloggero$Page$NoneOutMsg
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'HtmlPageMsg':
 				var _p35 = model.driverModel;
 				if (_p35.ctor === 'HtmlPage') {
-					var _p36 = A2(_easimonenko$bloggero_elm_mdl$Page_HtmlPage$update, _p3._0, _p35._0);
+					var _p36 = A2(_easimonenko$bloggero$Page_HtmlPage$update, _p3._0, _p35._0);
 					var updatedPage = _p36._0;
 					var pageCmds = _p36._1;
 					return {
@@ -33484,18 +33316,18 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$HtmlPage(updatedPage)
+								driverModel: _easimonenko$bloggero$Page$HtmlPage(updatedPage)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$HtmlPageMsg, pageCmds),
-						_2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$HtmlPageMsg, pageCmds),
+						_2: _easimonenko$bloggero$Page$NoneOutMsg
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'MarkdownPageMsg':
 				var _p37 = model.driverModel;
 				if (_p37.ctor === 'MarkdownPage') {
-					var _p38 = A2(_easimonenko$bloggero_elm_mdl$Page_MarkdownPage$update, _p3._0, _p37._0);
+					var _p38 = A2(_easimonenko$bloggero$Page_MarkdownPage$update, _p3._0, _p37._0);
 					var updatedPage = _p38._0;
 					var pageCmds = _p38._1;
 					var outMsg = _p38._2;
@@ -33504,25 +33336,25 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$MarkdownPage(updatedPage)
+								driverModel: _easimonenko$bloggero$Page$MarkdownPage(updatedPage)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$MarkdownPageMsg, pageCmds),
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$MarkdownPageMsg, pageCmds),
 						_2: function () {
 							var _p39 = outMsg;
 							if (_p39.ctor === 'NoneOutMsg') {
-								return _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg;
+								return _easimonenko$bloggero$Page$NoneOutMsg;
 							} else {
-								return A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _p39._0, _p39._1);
+								return A2(_easimonenko$bloggero$Page$AlertOutMsg, _p39._0, _p39._1);
 							}
 						}()
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			case 'NewsSectionPageMsg':
 				var _p40 = model.driverModel;
 				if (_p40.ctor === 'NewsSectionPage') {
-					var _p41 = A2(_easimonenko$bloggero_elm_mdl$News_NewsSectionPage$update, _p3._0, _p40._0);
+					var _p41 = A2(_easimonenko$bloggero$News_NewsSectionPage$update, _p3._0, _p40._0);
 					var updatedPage = _p41._0;
 					var pageCmds = _p41._1;
 					var outMsg = _p41._2;
@@ -33531,25 +33363,25 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$NewsSectionPage(updatedPage)
+								driverModel: _easimonenko$bloggero$Page$NewsSectionPage(updatedPage)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$NewsSectionPageMsg, pageCmds),
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$NewsSectionPageMsg, pageCmds),
 						_2: function () {
 							var _p42 = outMsg;
 							if (_p42.ctor === 'NoneOutMsg') {
-								return _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg;
+								return _easimonenko$bloggero$Page$NoneOutMsg;
 							} else {
-								return A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _p42._0, _p42._1);
+								return A2(_easimonenko$bloggero$Page$AlertOutMsg, _p42._0, _p42._1);
 							}
 						}()
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 			default:
 				var _p43 = model.driverModel;
 				if (_p43.ctor === 'NewsPage') {
-					var _p44 = A2(_easimonenko$bloggero_elm_mdl$News_NewsPage$update, _p3._0, _p43._0);
+					var _p44 = A2(_easimonenko$bloggero$News_NewsPage$update, _p3._0, _p43._0);
 					var updatedPage = _p44._0;
 					var pageCmds = _p44._1;
 					var outMsg = _p44._2;
@@ -33558,30 +33390,30 @@ var _easimonenko$bloggero_elm_mdl$Page$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								driverModel: _easimonenko$bloggero_elm_mdl$Page$NewsPage(updatedPage)
+								driverModel: _easimonenko$bloggero$Page$NewsPage(updatedPage)
 							}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Page$NewsPageMsg, pageCmds),
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Page$NewsPageMsg, pageCmds),
 						_2: function () {
 							var _p45 = outMsg;
 							if (_p45.ctor === 'NoneOutMsg') {
-								return _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg;
+								return _easimonenko$bloggero$Page$NoneOutMsg;
 							} else {
-								return A2(_easimonenko$bloggero_elm_mdl$Page$AlertOutMsg, _p45._0, _p45._1);
+								return A2(_easimonenko$bloggero$Page$AlertOutMsg, _p45._0, _p45._1);
 							}
 						}()
 					};
 				} else {
-					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero_elm_mdl$Page$NoneOutMsg};
+					return {ctor: '_Tuple3', _0: model, _1: _elm_lang$core$Platform_Cmd$none, _2: _easimonenko$bloggero$Page$NoneOutMsg};
 				}
 		}
 	});
 
-var _easimonenko$bloggero_elm_mdl$Main$tabsView = {
+var _easimonenko$bloggero$Main$tabsView = {
 	ctor: '_Tuple2',
 	_0: {ctor: '[]'},
 	_1: {ctor: '[]'}
 };
-var _easimonenko$bloggero_elm_mdl$Main$footerView = function (model) {
+var _easimonenko$bloggero$Main$footerView = function (model) {
 	return A2(
 		_debois$elm_mdl$Material_Footer$mini,
 		{ctor: '[]'},
@@ -33671,7 +33503,7 @@ var _easimonenko$bloggero_elm_mdl$Main$footerView = function (model) {
 														A2(
 															_elm_community$list_extra$List_Extra$find,
 															function (item) {
-																return _elm_lang$core$Native_Utils.eq(item, _easimonenko$bloggero_elm_mdl$Config$FooterPlacement);
+																return _elm_lang$core$Native_Utils.eq(item, _easimonenko$bloggero$Config$FooterPlacement);
 															},
 															item.placement),
 														function (_p1) {
@@ -33780,7 +33612,7 @@ var _easimonenko$bloggero_elm_mdl$Main$footerView = function (model) {
 						})))
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Main$headerView = function (model) {
+var _easimonenko$bloggero$Main$headerView = function (model) {
 	var headerTitle = A2(
 		_debois$elm_mdl$Material_Layout$title,
 		{ctor: '[]'},
@@ -33913,7 +33745,7 @@ var _easimonenko$bloggero_elm_mdl$Main$headerView = function (model) {
 													return A2(
 														_elm_lang$core$List$filter,
 														function (item) {
-															return A2(_elm_lang$core$List$member, _easimonenko$bloggero_elm_mdl$Config$HeaderPlacement, item.placement);
+															return A2(_elm_lang$core$List$member, _easimonenko$bloggero$Config$HeaderPlacement, item.placement);
 														},
 														config.sections);
 												})))),
@@ -33948,23 +33780,23 @@ var _easimonenko$bloggero_elm_mdl$Main$headerView = function (model) {
 		}
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Main$title = _elm_lang$core$Native_Platform.outgoingPort(
+var _easimonenko$bloggero$Main$title = _elm_lang$core$Native_Platform.outgoingPort(
 	'title',
 	function (v) {
 		return v;
 	});
-var _easimonenko$bloggero_elm_mdl$Main$Model = F9(
+var _easimonenko$bloggero$Main$Model = F9(
 	function (a, b, c, d, e, f, g, h, i) {
 		return {mdl: a, location: b, alertList: c, inPlaceAlert: d, page: e, snackbar: f, config: g, jsonConfig: h, sectionId: i};
 	});
-var _easimonenko$bloggero_elm_mdl$Main$ConfigMsg = function (a) {
+var _easimonenko$bloggero$Main$ConfigMsg = function (a) {
 	return {ctor: 'ConfigMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Main$HideDrawer = {ctor: 'HideDrawer'};
-var _easimonenko$bloggero_elm_mdl$Main$PageMsg = function (a) {
+var _easimonenko$bloggero$Main$HideDrawer = {ctor: 'HideDrawer'};
+var _easimonenko$bloggero$Main$PageMsg = function (a) {
 	return {ctor: 'PageMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Main$pageView = function (model) {
+var _easimonenko$bloggero$Main$pageView = function (model) {
 	return A2(
 		_debois$elm_mdl$Material_Grid$cell,
 		{
@@ -33985,7 +33817,7 @@ var _easimonenko$bloggero_elm_mdl$Main$pageView = function (model) {
 			_0: A2(
 				_elm_lang$core$Maybe$withDefault,
 				_elm_lang$html$Html$text(''),
-				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$view, model.inPlaceAlert)),
+				A2(_elm_lang$core$Maybe$map, _easimonenko$bloggero$Alert_InPlaceAlert$view, model.inPlaceAlert)),
 			_1: {
 				ctor: '::',
 				_0: A2(
@@ -33996,22 +33828,22 @@ var _easimonenko$bloggero_elm_mdl$Main$pageView = function (model) {
 						function (page) {
 							return A2(
 								_elm_lang$html$Html$map,
-								_easimonenko$bloggero_elm_mdl$Main$PageMsg,
-								_easimonenko$bloggero_elm_mdl$Page$view(page));
+								_easimonenko$bloggero$Main$PageMsg,
+								_easimonenko$bloggero$Page$view(page));
 						},
 						model.page)),
 				_1: {ctor: '[]'}
 			}
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Main$AlertListMsg = function (a) {
+var _easimonenko$bloggero$Main$AlertListMsg = function (a) {
 	return {ctor: 'AlertListMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Main$alertListView = function (model) {
+var _easimonenko$bloggero$Main$alertListView = function (model) {
 	var alertListViewCall = A2(
 		_elm_lang$html$Html$map,
-		_easimonenko$bloggero_elm_mdl$Main$AlertListMsg,
-		_easimonenko$bloggero_elm_mdl$Alert_AlertList$view(model.alertList));
+		_easimonenko$bloggero$Main$AlertListMsg,
+		_easimonenko$bloggero$Alert_AlertList$view(model.alertList));
 	return A2(
 		_debois$elm_mdl$Material_Grid$cell,
 		{
@@ -34058,10 +33890,10 @@ var _easimonenko$bloggero_elm_mdl$Main$alertListView = function (model) {
 					}
 				})));
 };
-var _easimonenko$bloggero_elm_mdl$Main$SnackbarMsg = function (a) {
+var _easimonenko$bloggero$Main$SnackbarMsg = function (a) {
 	return {ctor: 'SnackbarMsg', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Main$mainView = function (model) {
+var _easimonenko$bloggero$Main$mainView = function (model) {
 	return {
 		ctor: '::',
 		_0: A2(
@@ -34069,10 +33901,10 @@ var _easimonenko$bloggero_elm_mdl$Main$mainView = function (model) {
 			{ctor: '[]'},
 			{
 				ctor: '::',
-				_0: _easimonenko$bloggero_elm_mdl$Main$pageView(model),
+				_0: _easimonenko$bloggero$Main$pageView(model),
 				_1: {
 					ctor: '::',
-					_0: _easimonenko$bloggero_elm_mdl$Main$alertListView(model),
+					_0: _easimonenko$bloggero$Main$alertListView(model),
 					_1: {ctor: '[]'}
 				}
 			}),
@@ -34081,12 +33913,12 @@ var _easimonenko$bloggero_elm_mdl$Main$mainView = function (model) {
 			_0: _debois$elm_mdl$Material_Layout$spacer,
 			_1: {
 				ctor: '::',
-				_0: _easimonenko$bloggero_elm_mdl$Main$footerView(model),
+				_0: _easimonenko$bloggero$Main$footerView(model),
 				_1: {
 					ctor: '::',
 					_0: A2(
 						_elm_lang$html$Html$map,
-						_easimonenko$bloggero_elm_mdl$Main$SnackbarMsg,
+						_easimonenko$bloggero$Main$SnackbarMsg,
 						_debois$elm_mdl$Material_Snackbar$view(model.snackbar)),
 					_1: {ctor: '[]'}
 				}
@@ -34094,18 +33926,18 @@ var _easimonenko$bloggero_elm_mdl$Main$mainView = function (model) {
 		}
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Main$LocationChange = function (a) {
+var _easimonenko$bloggero$Main$LocationChange = function (a) {
 	return {ctor: 'LocationChange', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Main$locationChangeHandler = function (location) {
-	return _easimonenko$bloggero_elm_mdl$Main$LocationChange(location);
+var _easimonenko$bloggero$Main$locationChangeHandler = function (location) {
+	return _easimonenko$bloggero$Main$LocationChange(location);
 };
-var _easimonenko$bloggero_elm_mdl$Main$Mdl = function (a) {
+var _easimonenko$bloggero$Main$Mdl = function (a) {
 	return {ctor: 'Mdl', _0: a};
 };
-var _easimonenko$bloggero_elm_mdl$Main$init = function (location) {
-	var inPlaceAlert = A2(_easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$init, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'Loading of config...');
-	var _p4 = _easimonenko$bloggero_elm_mdl$Alert_AlertList$init;
+var _easimonenko$bloggero$Main$init = function (location) {
+	var inPlaceAlert = A2(_easimonenko$bloggero$Alert_InPlaceAlert$init, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'Loading of config...');
+	var _p4 = _easimonenko$bloggero$Alert_AlertList$init;
 	var alertList = _p4._0;
 	var alertListCmds = _p4._1;
 	var model = {
@@ -34120,9 +33952,9 @@ var _easimonenko$bloggero_elm_mdl$Main$init = function (location) {
 		sectionId: _elm_lang$core$Maybe$Nothing
 	};
 	if (_elm_lang$core$Native_Utils.eq(
-		_easimonenko$bloggero_elm_mdl$Utils$pagePath(location),
+		_easimonenko$bloggero$Utils$pagePath(location),
 		'')) {
-		var _p5 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'Redirect to /home.');
+		var _p5 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'Redirect to /home.');
 		var alertList = _p5._0;
 		var alertListCmds = _p5._1;
 		return {
@@ -34138,13 +33970,13 @@ var _easimonenko$bloggero_elm_mdl$Main$init = function (location) {
 			_1: _elm_lang$core$Platform_Cmd$batch(
 				{
 					ctor: '::',
-					_0: _debois$elm_mdl$Material_Layout$sub0(_easimonenko$bloggero_elm_mdl$Main$Mdl),
+					_0: _debois$elm_mdl$Material_Layout$sub0(_easimonenko$bloggero$Main$Mdl),
 					_1: {
 						ctor: '::',
-						_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds),
+						_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds),
 						_1: {
 							ctor: '::',
-							_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$ConfigMsg, _easimonenko$bloggero_elm_mdl$Config$init),
+							_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$ConfigMsg, _easimonenko$bloggero$Config$init),
 							_1: {ctor: '[]'}
 						}
 					}
@@ -34157,13 +33989,13 @@ var _easimonenko$bloggero_elm_mdl$Main$init = function (location) {
 			_1: _elm_lang$core$Platform_Cmd$batch(
 				{
 					ctor: '::',
-					_0: _debois$elm_mdl$Material_Layout$sub0(_easimonenko$bloggero_elm_mdl$Main$Mdl),
+					_0: _debois$elm_mdl$Material_Layout$sub0(_easimonenko$bloggero$Main$Mdl),
 					_1: {
 						ctor: '::',
-						_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds),
+						_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds),
 						_1: {
 							ctor: '::',
-							_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$ConfigMsg, _easimonenko$bloggero_elm_mdl$Config$init),
+							_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$ConfigMsg, _easimonenko$bloggero$Config$init),
 							_1: {ctor: '[]'}
 						}
 					}
@@ -34171,18 +34003,18 @@ var _easimonenko$bloggero_elm_mdl$Main$init = function (location) {
 		};
 	}
 };
-var _easimonenko$bloggero_elm_mdl$Main$update = F2(
+var _easimonenko$bloggero$Main$update = F2(
 	function (msg, model) {
 		var _p6 = msg;
 		switch (_p6.ctor) {
 			case 'Mdl':
-				return A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero_elm_mdl$Main$Mdl, _p6._0, model);
+				return A3(_debois$elm_mdl$Material$update, _easimonenko$bloggero$Main$Mdl, _p6._0, model);
 			case 'LocationChange':
 				var _p9 = _p6._0;
 				if (_elm_lang$core$Native_Utils.eq(
-					_easimonenko$bloggero_elm_mdl$Utils$pagePath(_p9),
+					_easimonenko$bloggero$Utils$pagePath(_p9),
 					'')) {
-					var _p7 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$InfoLevel, 'Redirect to /home');
+					var _p7 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _easimonenko$bloggero$Alert_AlertLevel$InfoLevel, 'Redirect to /home');
 					var alertList = _p7._0;
 					var alertListCmds = _p7._1;
 					return {
@@ -34193,7 +34025,7 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 						_1: _elm_lang$core$Platform_Cmd$batch(
 							{
 								ctor: '::',
-								_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds),
+								_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds),
 								_1: {
 									ctor: '::',
 									_0: _elm_lang$navigation$Navigation$modifyUrl('/#!/home'),
@@ -34249,7 +34081,7 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 							function (s) {
 								return A2(_elm_lang$core$Basics_ops['++'], ' - ', s.title);
 							}));
-					var _p8 = _easimonenko$bloggero_elm_mdl$Page$init(_p9);
+					var _p8 = _easimonenko$bloggero$Page$init(_p9);
 					var page = _p8._0;
 					var pageFx = _p8._1;
 					var outMsg = _p8._2;
@@ -34270,17 +34102,17 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 						_1: _elm_lang$core$Platform_Cmd$batch(
 							{
 								ctor: '::',
-								_0: _easimonenko$bloggero_elm_mdl$Main$title(
+								_0: _easimonenko$bloggero$Main$title(
 									A2(_elm_lang$core$Basics_ops['++'], blogTitle, sectionTitle)),
 								_1: {
 									ctor: '::',
-									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$PageMsg, pageFx),
+									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$PageMsg, pageFx),
 									_1: {
 										ctor: '::',
 										_0: model.mdl.layout.isDrawerOpen ? A2(
 											_elm_lang$core$Task$perform,
 											_elm_lang$core$Basics$identity,
-											_elm_lang$core$Task$succeed(_easimonenko$bloggero_elm_mdl$Main$HideDrawer)) : _elm_lang$core$Platform_Cmd$none,
+											_elm_lang$core$Task$succeed(_easimonenko$bloggero$Main$HideDrawer)) : _elm_lang$core$Platform_Cmd$none,
 										_1: {ctor: '[]'}
 									}
 								}
@@ -34288,7 +34120,7 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 					};
 				}
 			case 'AlertListMsg':
-				var _p10 = A2(_easimonenko$bloggero_elm_mdl$Alert_AlertList$update, _p6._0, model.alertList);
+				var _p10 = A2(_easimonenko$bloggero$Alert_AlertList$update, _p6._0, model.alertList);
 				var updatedAlertList = _p10._0;
 				var alertListCmds = _p10._1;
 				return {
@@ -34296,12 +34128,12 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{alertList: updatedAlertList}),
-					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds)
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds)
 				};
 			case 'PageMsg':
 				var _p11 = model.page;
 				if (_p11.ctor === 'Just') {
-					var _p12 = A2(_easimonenko$bloggero_elm_mdl$Page$update, _p6._0, _p11._0);
+					var _p12 = A2(_easimonenko$bloggero$Page$update, _p6._0, _p11._0);
 					var updatedPage = _p12._0;
 					var pageCmds = _p12._1;
 					var outMsg = _p12._2;
@@ -34314,10 +34146,10 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 								{
 									page: _elm_lang$core$Maybe$Just(updatedPage)
 								}),
-							_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$PageMsg, pageCmds)
+							_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$PageMsg, pageCmds)
 						};
 					} else {
-						var _p14 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _p13._0, _p13._1);
+						var _p14 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _p13._0, _p13._1);
 						var alertList = _p14._0;
 						var alertListCmds = _p14._1;
 						return {
@@ -34331,17 +34163,17 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 							_1: _elm_lang$core$Platform_Cmd$batch(
 								{
 									ctor: '::',
-									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$PageMsg, pageCmds),
+									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$PageMsg, pageCmds),
 									_1: {
 										ctor: '::',
-										_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds),
+										_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds),
 										_1: {ctor: '[]'}
 									}
 								})
 						};
 					}
 				} else {
-					var _p15 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, 'WTF: page is Nothing!');
+					var _p15 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, 'WTF: page is Nothing!');
 					var alertList = _p15._0;
 					var alertListCmds = _p15._1;
 					return {
@@ -34349,7 +34181,7 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{alertList: alertList}),
-						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds)
+						_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds)
 					};
 				}
 			case 'SnackbarMsg':
@@ -34361,7 +34193,7 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 					_0: _elm_lang$core$Native_Utils.update(
 						model,
 						{snackbar: snackbar}),
-					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$SnackbarMsg, snackbarCmds)
+					_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$SnackbarMsg, snackbarCmds)
 				};
 			case 'HideDrawer':
 				return {
@@ -34371,14 +34203,14 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 						_elm_lang$core$Task$perform,
 						_elm_lang$core$Basics$identity,
 						_elm_lang$core$Task$succeed(
-							_debois$elm_mdl$Material_Layout$toggleDrawer(_easimonenko$bloggero_elm_mdl$Main$Mdl)))
+							_debois$elm_mdl$Material_Layout$toggleDrawer(_easimonenko$bloggero$Main$Mdl)))
 				};
 			default:
-				var _p17 = _easimonenko$bloggero_elm_mdl$Config$update(_p6._0);
+				var _p17 = _easimonenko$bloggero$Config$update(_p6._0);
 				switch (_p17.ctor) {
 					case 'Success':
 						var _p19 = _p17._1;
-						var _p18 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$SuccessLevel, 'The config is loaded.');
+						var _p18 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _easimonenko$bloggero$Alert_AlertLevel$SuccessLevel, 'The config is loaded.');
 						var alertList = _p18._0;
 						var alertListCmds = _p18._1;
 						return {
@@ -34394,14 +34226,14 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 							_1: _elm_lang$core$Platform_Cmd$batch(
 								{
 									ctor: '::',
-									_0: _easimonenko$bloggero_elm_mdl$Main$title(_p19.title),
+									_0: _easimonenko$bloggero$Main$title(_p19.title),
 									_1: {
 										ctor: '::',
 										_0: _elm_lang$navigation$Navigation$modifyUrl(
 											A2(_elm_lang$core$Basics_ops['++'], '/', model.location.hash)),
 										_1: {
 											ctor: '::',
-											_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds),
+											_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds),
 											_1: {ctor: '[]'}
 										}
 									}
@@ -34411,8 +34243,8 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 						var message = A2(
 							_elm_lang$core$Basics_ops['++'],
 							'The config is not loaded. ',
-							_easimonenko$bloggero_elm_mdl$Utils$toHumanReadable(_p17._0));
-						var _p20 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, message);
+							_easimonenko$bloggero$Utils$toHumanReadable(_p17._0));
+						var _p20 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, message);
 						var alertList = _p20._0;
 						var alertListCmds = _p20._1;
 						return {
@@ -34423,13 +34255,13 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 							_1: _elm_lang$core$Platform_Cmd$batch(
 								{
 									ctor: '::',
-									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds),
+									_0: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds),
 									_1: {ctor: '[]'}
 								})
 						};
 					default:
 						var message = A2(_elm_lang$core$Basics_ops['++'], 'The config is not loaded. ', _p17._1);
-						var _p21 = A3(_easimonenko$bloggero_elm_mdl$Alert_AlertList$add, model.alertList, _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$DangerLevel, message);
+						var _p21 = A3(_easimonenko$bloggero$Alert_AlertList$add, model.alertList, _easimonenko$bloggero$Alert_AlertLevel$DangerLevel, message);
 						var alertList = _p21._0;
 						var alertListCmds = _p21._1;
 						return {
@@ -34440,13 +34272,13 @@ var _easimonenko$bloggero_elm_mdl$Main$update = F2(
 									alertList: alertList,
 									jsonConfig: _elm_lang$core$Maybe$Just(_p17._0)
 								}),
-							_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero_elm_mdl$Main$AlertListMsg, alertListCmds)
+							_1: A2(_elm_lang$core$Platform_Cmd$map, _easimonenko$bloggero$Main$AlertListMsg, alertListCmds)
 						};
 				}
 		}
 	});
-var _easimonenko$bloggero_elm_mdl$Main$subscriptions = _debois$elm_mdl$Material$subscriptions(_easimonenko$bloggero_elm_mdl$Main$Mdl);
-var _easimonenko$bloggero_elm_mdl$Main$drawerView = function (model) {
+var _easimonenko$bloggero$Main$subscriptions = _debois$elm_mdl$Material$subscriptions(_easimonenko$bloggero$Main$Mdl);
+var _easimonenko$bloggero$Main$drawerView = function (model) {
 	var makeLink = function (item) {
 		return A2(
 			_debois$elm_mdl$Material_Layout$link,
@@ -34542,7 +34374,7 @@ var _easimonenko$bloggero_elm_mdl$Main$drawerView = function (model) {
 					ctor: '::',
 					_0: A5(
 						_debois$elm_mdl$Material_Button$render,
-						_easimonenko$bloggero_elm_mdl$Main$Mdl,
+						_easimonenko$bloggero$Main$Mdl,
 						{
 							ctor: '::',
 							_0: 0,
@@ -34560,7 +34392,7 @@ var _easimonenko$bloggero_elm_mdl$Main$drawerView = function (model) {
 									_0: _debois$elm_mdl$Material_Button$ripple,
 									_1: {
 										ctor: '::',
-										_0: _debois$elm_mdl$Material_Options$onClick(_easimonenko$bloggero_elm_mdl$Main$HideDrawer),
+										_0: _debois$elm_mdl$Material_Options$onClick(_easimonenko$bloggero$Main$HideDrawer),
 										_1: {ctor: '[]'}
 									}
 								}
@@ -34599,7 +34431,7 @@ var _easimonenko$bloggero_elm_mdl$Main$drawerView = function (model) {
 									A2(
 										_elm_lang$core$List$filter,
 										function (item) {
-											return A2(_elm_lang$core$List$member, _easimonenko$bloggero_elm_mdl$Config$DrawerPlacement, item.placement);
+											return A2(_elm_lang$core$List$member, _easimonenko$bloggero$Config$DrawerPlacement, item.placement);
 										},
 										config.sections));
 							}))),
@@ -34608,10 +34440,10 @@ var _easimonenko$bloggero_elm_mdl$Main$drawerView = function (model) {
 		}
 	};
 };
-var _easimonenko$bloggero_elm_mdl$Main$view = function (model) {
+var _easimonenko$bloggero$Main$view = function (model) {
 	return A4(
 		_debois$elm_mdl$Material_Layout$render,
-		_easimonenko$bloggero_elm_mdl$Main$Mdl,
+		_easimonenko$bloggero$Main$Mdl,
 		model.mdl,
 		{
 			ctor: '::',
@@ -34631,143 +34463,21 @@ var _easimonenko$bloggero_elm_mdl$Main$view = function (model) {
 			}
 		},
 		{
-			header: _easimonenko$bloggero_elm_mdl$Main$headerView(model),
-			drawer: _easimonenko$bloggero_elm_mdl$Main$drawerView(model),
-			main: _easimonenko$bloggero_elm_mdl$Main$mainView(model),
-			tabs: _easimonenko$bloggero_elm_mdl$Main$tabsView
+			header: _easimonenko$bloggero$Main$headerView(model),
+			drawer: _easimonenko$bloggero$Main$drawerView(model),
+			main: _easimonenko$bloggero$Main$mainView(model),
+			tabs: _easimonenko$bloggero$Main$tabsView
 		});
 };
-var _easimonenko$bloggero_elm_mdl$Main$main = A2(
+var _easimonenko$bloggero$Main$main = A2(
 	_elm_lang$navigation$Navigation$program,
-	_easimonenko$bloggero_elm_mdl$Main$locationChangeHandler,
-	{init: _easimonenko$bloggero_elm_mdl$Main$init, view: _easimonenko$bloggero_elm_mdl$Main$view, subscriptions: _easimonenko$bloggero_elm_mdl$Main$subscriptions, update: _easimonenko$bloggero_elm_mdl$Main$update})();
+	_easimonenko$bloggero$Main$locationChangeHandler,
+	{init: _easimonenko$bloggero$Main$init, view: _easimonenko$bloggero$Main$view, subscriptions: _easimonenko$bloggero$Main$subscriptions, update: _easimonenko$bloggero$Main$update})();
 
 var Elm = {};
-Elm['Alert'] = Elm['Alert'] || {};
-Elm['Alert']['Alert'] = Elm['Alert']['Alert'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Alert_Alert$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Alert_Alert$main(Elm['Alert']['Alert'], 'Alert.Alert', undefined);
-}
-Elm['Alert'] = Elm['Alert'] || {};
-Elm['Alert']['AlertLevel'] = Elm['Alert']['AlertLevel'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Alert_AlertLevel$main(Elm['Alert']['AlertLevel'], 'Alert.AlertLevel', undefined);
-}
-Elm['Alert'] = Elm['Alert'] || {};
-Elm['Alert']['AlertList'] = Elm['Alert']['AlertList'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Alert_AlertList$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Alert_AlertList$main(Elm['Alert']['AlertList'], 'Alert.AlertList', undefined);
-}
-Elm['Alert'] = Elm['Alert'] || {};
-Elm['Alert']['InPlaceAlert'] = Elm['Alert']['InPlaceAlert'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlert$main(Elm['Alert']['InPlaceAlert'], 'Alert.InPlaceAlert', undefined);
-}
-Elm['Alert'] = Elm['Alert'] || {};
-Elm['Alert']['InPlaceAlertClosable'] = Elm['Alert']['InPlaceAlertClosable'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Alert_InPlaceAlertClosable$main(Elm['Alert']['InPlaceAlertClosable'], 'Alert.InPlaceAlertClosable', undefined);
-}
-Elm['Blog'] = Elm['Blog'] || {};
-Elm['Blog']['BlogPage'] = Elm['Blog']['BlogPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Blog_BlogPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Blog_BlogPage$main(Elm['Blog']['BlogPage'], 'Blog.BlogPage', undefined);
-}
-Elm['Blog'] = Elm['Blog'] || {};
-Elm['Blog']['PostInfo'] = Elm['Blog']['PostInfo'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Blog_PostInfo$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Blog_PostInfo$main(Elm['Blog']['PostInfo'], 'Blog.PostInfo', undefined);
-}
-Elm['Blog'] = Elm['Blog'] || {};
-Elm['Blog']['PostList'] = Elm['Blog']['PostList'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Blog_PostList$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Blog_PostList$main(Elm['Blog']['PostList'], 'Blog.PostList', undefined);
-}
-Elm['Blog'] = Elm['Blog'] || {};
-Elm['Blog']['PostPage'] = Elm['Blog']['PostPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Blog_PostPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Blog_PostPage$main(Elm['Blog']['PostPage'], 'Blog.PostPage', undefined);
-}
-Elm['Config'] = Elm['Config'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Config$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Config$main(Elm['Config'], 'Config', undefined);
-}
-Elm['Link'] = Elm['Link'] || {};
-Elm['Link']['Link'] = Elm['Link']['Link'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Link_Link$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Link_Link$main(Elm['Link']['Link'], 'Link.Link', undefined);
-}
-Elm['Link'] = Elm['Link'] || {};
-Elm['Link']['LinkFromPageInfo'] = Elm['Link']['LinkFromPageInfo'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Link_LinkFromPageInfo$main(Elm['Link']['LinkFromPageInfo'], 'Link.LinkFromPageInfo', undefined);
-}
 Elm['Main'] = Elm['Main'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Main$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Main$main(Elm['Main'], 'Main', undefined);
-}
-Elm['News'] = Elm['News'] || {};
-Elm['News']['NewsInfo'] = Elm['News']['NewsInfo'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$News_NewsInfo$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$News_NewsInfo$main(Elm['News']['NewsInfo'], 'News.NewsInfo', undefined);
-}
-Elm['News'] = Elm['News'] || {};
-Elm['News']['NewsList'] = Elm['News']['NewsList'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$News_NewsList$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$News_NewsList$main(Elm['News']['NewsList'], 'News.NewsList', undefined);
-}
-Elm['News'] = Elm['News'] || {};
-Elm['News']['NewsPage'] = Elm['News']['NewsPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$News_NewsPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$News_NewsPage$main(Elm['News']['NewsPage'], 'News.NewsPage', undefined);
-}
-Elm['News'] = Elm['News'] || {};
-Elm['News']['NewsSectionPage'] = Elm['News']['NewsSectionPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$News_NewsSectionPage$main(Elm['News']['NewsSectionPage'], 'News.NewsSectionPage', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page$main(Elm['Page'], 'Page', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['Breadcrumbs'] = Elm['Page']['Breadcrumbs'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_Breadcrumbs$main(Elm['Page']['Breadcrumbs'], 'Page.Breadcrumbs', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['HomePage'] = Elm['Page']['HomePage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_HomePage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_HomePage$main(Elm['Page']['HomePage'], 'Page.HomePage', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['HtmlPage'] = Elm['Page']['HtmlPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_HtmlPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_HtmlPage$main(Elm['Page']['HtmlPage'], 'Page.HtmlPage', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['InPlaceAlertPage'] = Elm['Page']['InPlaceAlertPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_InPlaceAlertPage$main(Elm['Page']['InPlaceAlertPage'], 'Page.InPlaceAlertPage', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['MarkdownPage'] = Elm['Page']['MarkdownPage'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_MarkdownPage$main(Elm['Page']['MarkdownPage'], 'Page.MarkdownPage', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['PageInfo'] = Elm['Page']['PageInfo'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_PageInfo$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_PageInfo$main(Elm['Page']['PageInfo'], 'Page.PageInfo', undefined);
-}
-Elm['Page'] = Elm['Page'] || {};
-Elm['Page']['PageInfoRefresh'] = Elm['Page']['PageInfoRefresh'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Page_PageInfoRefresh$main(Elm['Page']['PageInfoRefresh'], 'Page.PageInfoRefresh', undefined);
-}
-Elm['Utils'] = Elm['Utils'] || {};
-if (typeof _easimonenko$bloggero_elm_mdl$Utils$main !== 'undefined') {
-    _easimonenko$bloggero_elm_mdl$Utils$main(Elm['Utils'], 'Utils', undefined);
+if (typeof _easimonenko$bloggero$Main$main !== 'undefined') {
+    _easimonenko$bloggero$Main$main(Elm['Main'], 'Main', undefined);
 }
 
 if (typeof define === "function" && define['amd'])
