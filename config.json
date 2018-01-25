@@ -37,14 +37,14 @@
     }
   ],
   "copyright": {
-    "text": "&copy; Evgeniy Simonenko, 2013 &ndash; 2017",
+    "text": "&copy; Evgeny Simonenko, 2013 &ndash; 2018",
     "url": "/#!/copyright",
     "email": "easimonenko@mail.ru"
   },
   "links": [
     {
       "title": "Made with Bloggero",
-      "url": "https://github.com/easimonenko/bloggero-elm-mdl",
+      "url": "https://github.com/easimonenko/bloggero",
       "icon": "github"
     }
   ],
