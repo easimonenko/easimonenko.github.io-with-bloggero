@@ -3,6 +3,7 @@
   "driver": "blog",
   "blog": {
     "posts": [
+      "neo4j-install-and-run",
       "oai-pmh-cli",
       "arxiv.org",
       "node-cli-options-parsing-review",
