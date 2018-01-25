@@ -25,6 +25,10 @@
   font-weight: lighter;
 }
 
+article img {
+  max-width: 100%;
+}
+
 li>p {
   margin-bottom: 0;
 }
