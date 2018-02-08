@@ -3,6 +3,7 @@
   "driver": "blog",
   "blog": {
     "posts": [
+      "developers-tools-in-the-elm-language-2018",
       "neo4j-install-and-run",
       "oai-pmh-cli",
       "arxiv.org",
