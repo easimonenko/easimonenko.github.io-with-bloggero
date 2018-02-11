@@ -3,6 +3,7 @@
   "driver": "blog",
   "blog": {
     "posts": [
+      "about-why-i-decided-to-freeze-my-activity-on-habrahabr",
       "developers-tools-in-the-elm-language-2018",
       "neo4j-install-and-run",
       "oai-pmh-cli",
