@@ -26,5 +26,6 @@
         <foaf:name>Dmitry Medvedev</foaf:name>
         <foaf:nick>Mislitel</foaf:nick>
       </foaf:Person>
+    </foaf:knows>
   </foaf:Person>
 </rdf:RDF>
