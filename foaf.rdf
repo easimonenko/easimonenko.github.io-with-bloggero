@@ -1,0 +1,30 @@
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <foaf:Person>
+    <foaf:name>Evgeny Simonenko</foaf:name>
+    <foaf:mbox rdf:resource="mailto:easimonenko@mail.ru"/>
+    <foaf:homepage rdf:resource="https://easimonenko.github.io"/>
+    <foaf:nick>EvAn</foaf:nick>
+    <foaf:depiction rdf:resource="https://easimonenko.github.io/about/photo-2015.jpg"/>
+    <foaf:interest>
+      <rdf:Description rdf:about="https://www.haskell.org/" rdfs:label="Haskell" />
+      <rdf:Description rdf:about="http://elm-lang.org/" rdfs:label="Elm" />
+    </foaf:interest>
+    <foaf:knows>
+      <foaf:Person>
+        <foaf:name>Dmitry Mouromtsev</foaf:name>
+        <foaf:mbox rdf:resource="mailto:d.muromtsev@gmail.com"/>
+      </foaf:Person>
+      <foaf:Person>
+        <foaf:name>Alexey Shmakov</foaf:name>
+        <foaf:mbox rdf:resource="mailto:razzeeyy@gmail.com"/>
+        <foaf:nick>Razzeeyy</foaf:nick>
+      </foaf:Person>
+      <foaf:Person>
+        <foaf:name>Dmitry Medvedev</foaf:name>
+        <foaf:nick>Mislitel</foaf:nick>
+      </foaf:Person>
+  </foaf:Person>
+</rdf:RDF>
